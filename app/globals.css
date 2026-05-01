@@ -175,12 +175,11 @@ select {
   text-transform: lowercase;
 }
 
-.home-sticker {
+.home-doodle {
   position: absolute;
   z-index: 5;
   pointer-events: none;
   height: auto;
-  opacity: 0.94;
 }
 
 .content-page {
@@ -243,46 +242,32 @@ select {
 
 .team-spotlights {
   display: grid;
-  gap: 90px;
+  gap: 28px;
 }
 
 .team-spotlight {
   display: grid;
-  grid-template-columns: minmax(280px, 440px) minmax(320px, 1fr);
-  gap: clamp(36px, 5vw, 84px);
-  align-items: center;
-}
-
-.team-spotlight--reverse {
-  grid-template-columns: minmax(320px, 1fr) minmax(280px, 440px);
-}
-
-.team-spotlight--reverse .team-spotlight__media {
-  order: 2;
-}
-
-.team-spotlight--reverse .team-spotlight__content {
-  order: 1;
-}
-
-.team-spotlight--text-only {
-  grid-template-columns: minmax(320px, 760px);
+  grid-template-columns: minmax(220px, 260px) minmax(0, 1fr);
+  gap: 24px 40px;
+  align-items: start;
+  padding: 24px 24px 28px;
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+  background: #fafaf9;
 }
 
 .team-spotlight__frame {
   position: relative;
-  width: min(100%, 420px);
+  width: min(100%, 260px);
   aspect-ratio: 1 / 1;
   overflow: hidden;
-  box-shadow: 0 24px 64px var(--wtc-shadow);
+  border-radius: 6px;
+  background: #f5f5f4;
 }
 
 .team-spotlight__media {
   display: flex;
-}
-
-.team-spotlight--reverse .team-spotlight__media {
-  justify-content: flex-end;
+  width: min(100%, 260px);
 }
 
 .team-spotlight__content {
@@ -290,40 +275,45 @@ select {
 }
 
 .team-spotlight--text-only {
-  grid-template-columns: minmax(360px, 940px);
+  grid-template-columns: minmax(0, 1fr);
 }
 
 .team-spotlight--text-only .team-spotlight__content {
-  max-width: 940px;
+  max-width: 860px;
 }
 
 .team-card__name {
-  margin: 0 0 12px;
-  color: var(--wtc-text-soft);
-  font-size: clamp(34px, 2.6vw, 42px);
-  font-weight: 400;
-  line-height: 1.05;
+  margin: 0 0 10px;
+  color: #171717;
+  font-family: "Playfair Display", "Iowan Old Style", "Book Antiqua", "Palatino Linotype", Georgia, serif;
+  font-size: clamp(28px, 2.3vw, 32px);
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
 }
 
-.team-card__role {
-  margin: 0 0 20px;
-  color: var(--wtc-white);
-  font-size: clamp(26px, 2.2vw, 34px);
-  font-weight: 500;
-  line-height: 1.08;
+.team-card__meta {
+  margin: 0 0 18px;
+  color: #737373;
+  font-family: Inter, var(--wtc-sans);
+  font-size: clamp(13px, 1.1vw, 14px);
+  font-weight: 400;
+  line-height: 1.45;
+  letter-spacing: 0.02em;
 }
 
 .team-card__bio {
-  max-width: 620px;
+  max-width: 640px;
   margin: 0;
-  font-family: var(--wtc-sans);
-  font-size: clamp(18px, 1.46vw, 22px);
-  line-height: 1.62;
-  color: var(--wtc-white);
+  color: #404040;
+  font-family: Inter, var(--wtc-sans);
+  font-size: clamp(15px, 1.25vw, 16px);
+  font-weight: 400;
+  line-height: 1.65;
 }
 
 .team-card__bio--muted {
-  color: var(--wtc-white);
+  color: #525252;
 }
 
 .team-photo-section {
@@ -338,7 +328,10 @@ select {
 }
 
 .team-photo-section__image {
-  box-shadow: 0 24px 64px var(--wtc-shadow);
+  overflow: hidden;
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+  background: #fafaf9;
 }
 
 .team-photo {
@@ -348,7 +341,9 @@ select {
 }
 
 .creations-page {
+  position: relative;
   max-width: 1320px;
+  padding-bottom: 44px;
 }
 
 .creations-page__header {
@@ -372,8 +367,8 @@ select {
 
 .creations-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(280px, 1fr));
-  gap: 40px 36px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 26px;
   align-items: start;
 }
 
@@ -381,35 +376,21 @@ select {
   margin: 0;
 }
 
-.creations-piece--portrait {
-  grid-column: span 1;
-}
-
-.creations-piece--square {
-  grid-column: span 1;
-}
-
-.creations-piece--landscape {
-  grid-column: span 2;
-}
-
 .creations-piece__media {
   position: relative;
+  min-height: 230px;
   overflow: hidden;
-  background: rgba(255, 248, 244, 0.05);
-  box-shadow: 0 18px 44px var(--wtc-shadow);
-}
-
-.creations-piece--portrait .creations-piece__media {
-  aspect-ratio: 4 / 5;
-}
-
-.creations-piece--square .creations-piece__media {
   aspect-ratio: 1 / 1;
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+  background: #fafaf9;
 }
 
-.creations-piece--landscape .creations-piece__media {
-  aspect-ratio: 16 / 9;
+.creations-doodle {
+  position: absolute;
+  z-index: 2;
+  pointer-events: none;
+  height: auto;
 }
 
 .signup-page {
@@ -461,18 +442,8 @@ select {
     padding-right: 0;
   }
 
-  .team-spotlight,
-  .team-spotlight--reverse {
-    grid-template-columns: minmax(240px, 380px) minmax(300px, 1fr);
-  }
-
-  .creations-piece--portrait,
-  .creations-piece--square {
-    grid-column: span 6;
-  }
-
-  .creations-piece--landscape {
-    grid-column: span 12;
+  .team-spotlight {
+    grid-template-columns: minmax(220px, 260px) minmax(0, 1fr);
   }
 }
 
@@ -525,18 +496,13 @@ select {
   }
 
   .team-spotlight,
-  .team-spotlight--reverse {
+  .team-spotlight--text-only {
     grid-template-columns: 1fr;
     gap: 26px;
   }
 
-  .team-spotlight--reverse .team-spotlight__media,
-  .team-spotlight--reverse .team-spotlight__content {
-    order: initial;
-  }
-
   .team-spotlight__frame {
-    max-width: 460px;
+    max-width: 260px;
   }
 
   .signup-page__title {
@@ -555,10 +521,8 @@ select {
     text-align: left;
   }
 
-  .creations-piece--portrait,
-  .creations-piece--square,
-  .creations-piece--landscape {
-    grid-column: span 2;
+  .creations-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
@@ -602,12 +566,11 @@ select {
     font-size: 21px;
   }
 
-  .team-card__bio,
   .signup-aside {
     font-size: 17px;
   }
 
-  .home-sticker {
+  .home-doodle {
     opacity: 0.72;
     transform: scale(0.72);
     transform-origin: center;
@@ -615,11 +578,5 @@ select {
 
   .creations-grid {
     grid-template-columns: 1fr;
-  }
-
-  .creations-piece--portrait,
-  .creations-piece--square,
-  .creations-piece--landscape {
-    grid-column: span 1;
   }
 }

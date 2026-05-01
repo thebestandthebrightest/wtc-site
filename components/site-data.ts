@@ -2,16 +2,11 @@ export type NavKey = "home" | "about" | "team" | "creations" | "sign-up";
 export type TeamMember = {
   name: string;
   role: string;
+  meta: string;
   bio: string;
   imageSrc?: string;
   imageAlt?: string;
   imagePosition?: string;
-};
-
-export type CropAsset = {
-  src: string;
-  alt: string;
-  objectPosition: string;
 };
 
 export type DoodleAsset = {
@@ -56,15 +51,17 @@ export const aboutParagraphs = [
 export const teamMembers: TeamMember[] = [
   {
     name: "Vivian Glenn",
-    role: "Founder",
-    bio: "Vivian (Class of 2027) is from Moorestown, New Jersey. After taking ceramics classes all four years of high school, she was inspired to bring a hands-on clay activity to Rutgers. She is pursuing the Public Health major and is on the pre-medical track. Outside of class, Vivian works as a Learning Assistant for Physics for the Sciences and is a research assistant at Brown University’s School of Public Health. In her free time, she enjoys baking desserts, exploring new coffee shops, and traveling.",
+    role: "Founder & President",
+    meta: "Founder & President · Class of 2027 · Moorestown, NJ · Public Health",
+    bio: "Vivian Glenn is the Founder and President of Wellness Through Clay, a student-led initiative that creates space for students to unwind, connect, and explore ceramics. After taking ceramics throughout high school, she noticed there wasn’t a place to engage with it recreationally at Rutgers and started WTC to bring that experience to campus. Alongside this, Vivian has been involved in public health research, with experience at Brown University School of Public Health, the Rutgers Center for Alcohol and Substance Use Studies, and the RWJ Women's Health Institute, focusing on substance use disorder, mental health, and policy. She also works as a Learning Assistant for Physics for the Sciences and previously studied abroad in London at City St George’s, University of London. Outside of school, Vivian enjoys baking desserts, exploring new coffee shops, and loves traveling. She has visited 14 countries in just three months.",
     imageSrc: "/assets/team/vivian.png",
-    imageAlt: "Vivian Glenn team portrait card",
-    imagePosition: "52% 34%"
+    imageAlt: "Vivian Glenn headshot",
+    imagePosition: "50% 35%"
   },
   {
     name: "Saulė Mikaliūnaitė",
     role: "Vice President",
+    meta: "Vice President · Class of 2027 · Jefferson, NJ · Genetics + Data Science",
     bio: "Saulė (Class of 2027) is originally from Lithuania but has been living in Jefferson, New Jersey, for the past few years. She is majoring in Genetics with a minor in Data Science while also working as a chess instructor and an ODASIS Supplemental Instructor. Passionate about bringing creativity into everyday life, she strives to inspire others to do the same. Her favorite creative outlets include photography, fashion, writing, playing the piano, and various handcrafts.",
     imageSrc: "/assets/team/saule.png",
     imageAlt: "Saulė Mikaliūnaitė team portrait card",
@@ -73,6 +70,7 @@ export const teamMembers: TeamMember[] = [
   {
     name: "Leudgiana Marcelin",
     role: "Research Chair",
+    meta: "Research Chair · Class of 2027 · East Orange, NJ · Exercise Science",
     bio: "Leudgiana Marcelin Class of 2027 is from East Orange. After working as a teacher at a daycare, she developed a passion for children’s health and well-being, inspiring her journey toward pediatric medicine. She is majoring in Exercise Science on the pre-medical track, with a special interest in stem cell research. Outside of class, she has been involved with Glamour Gals, and Gen’ Next. In her free time, she enjoys trying new activities, working out, and reading.",
     imageSrc: "/assets/team/leudgiana.png",
     imageAlt: "Leudgiana Marcelin team portrait card",
@@ -81,6 +79,7 @@ export const teamMembers: TeamMember[] = [
   {
     name: "Ikjot Puar",
     role: "Secretary",
+    meta: "Secretary",
     bio: "Bio forthcoming.",
     imageSrc: "/assets/team/ikjot.png",
     imageAlt: "Ikjot Puar team portrait card",
@@ -89,6 +88,7 @@ export const teamMembers: TeamMember[] = [
   {
     name: "Zabrina Garofalo",
     role: "Founder",
+    meta: "Founder · Class of 2027 · Middletown, NJ · Biological Sciences",
     bio: "Zabrina (Class of 2027) is from Middletown, New Jersey, and has lived here for the past 7 years. She is pursuing a major in Biological sciences and is on the pre-medical track. Outside of classroom, she volunteers at a non-profit health organization and translates for patients who are unable to speak English. Although she loves science with her whole heart, she values creativity just as much. She loves to draw both digitally and traditionally, bake, play video-games, write, and spend quality time with those closest to her.",
     imageSrc: "/assets/team/zabrina.png",
     imageAlt: "Zabrina Garofalo team portrait card",
@@ -97,6 +97,7 @@ export const teamMembers: TeamMember[] = [
   {
     name: "Zofia Garofalo",
     role: "Vice President",
+    meta: "Vice President",
     bio: "Bio forthcoming.",
     imageSrc: "/assets/team/zofia.png",
     imageAlt: "Zofia Garofalo team portrait card",
@@ -105,115 +106,153 @@ export const teamMembers: TeamMember[] = [
   {
     name: "Sheila Tabanli",
     role: "Faculty Sponsor",
+    meta: "Faculty Sponsor · Mathematics · Rutgers University–New Brunswick",
     bio: "Sheila Tabanli earned her Ph.D. in Computer Science at Missouri University of Science & Technology (Missouri S&T). She is currently an Assistant Teaching Professor of Mathematics at Rutgers University – New Brunswick. Her scholarship focuses on designing student-centered, evidence-based instructional strategies to improve student learning experiences and sense of belonging in math classrooms. She recently developed an instructional framework grounded on research in cognitive science and Social Emotional Learning (SEL). Dr. Tabanli has more than 20 years of experience in the K-20 education domain and has diverse hands-on experiences in designing and implementing inclusive, research-based, engaging learning practices. She is a fellow of Rutgers Chancellor Teaching Fellowship program to develop pedagogical innovations for personalized pathways aimed at improving student learning outcomes. In addition to her academic work, she has been actively supporting Wellness Through Clay as a thoughtful and dedicated faculty sponsor, providing invaluable guidance for our mission to promote creativity, wellness, and community engagement."
   }
 ];
 
 export const homeDoodles: DoodleAsset[] = [
   {
-    src: "/assets/doodles/oleander-sticker.png",
-    alt: "Oleander sticker",
-    width: 138,
-    height: 202,
-    style: { top: "15.5%", left: "11.2%" }
+    src: "/assets/doodles/oleander-doodle.png",
+    alt: "Oleander doodle",
+    width: 60,
+    height: 88,
+    style: { top: "12%", left: "5%", opacity: "0.75", transform: "rotate(-6deg)" }
   },
   {
-    src: "/assets/doodles/lily-sticker.png",
-    alt: "Lily sticker",
-    width: 126,
-    height: 210,
-    style: { top: "17.2%", right: "11%" }
+    src: "/assets/doodles/lily-doodle.png",
+    alt: "Lily doodle",
+    width: 70,
+    height: 116,
+    style: { top: "11%", right: "7%", opacity: "0.68", transform: "rotate(7deg)" }
   },
   {
-    src: "/assets/doodles/flying-butterfly-sticker.png",
-    alt: "Flying butterfly sticker",
-    width: 150,
-    height: 154,
-    style: { top: "44.8%", left: "4.6%" }
+    src: "/assets/doodles/flying-butterfly-doodle.png",
+    alt: "Flying butterfly doodle",
+    width: 78,
+    height: 80,
+    style: { top: "34%", left: "4%", opacity: "0.8", transform: "rotate(-8deg)" }
   },
   {
-    src: "/assets/doodles/record-sticker.png",
-    alt: "Record sticker",
-    width: 144,
-    height: 118,
-    style: { top: "42.8%", right: "5.2%" }
+    src: "/assets/doodles/bee-doodle.png",
+    alt: "Bee doodle",
+    width: 52,
+    height: 45,
+    style: { top: "16%", left: "48%", opacity: "0.72", transform: "rotate(4deg)" }
   },
   {
-    src: "/assets/doodles/open-butterfly-sticker.png",
-    alt: "Open butterfly sticker",
-    width: 154,
-    height: 124,
-    style: { bottom: "11.2%", left: "14.6%" }
+    src: "/assets/doodles/open-butterfly-doodle.png",
+    alt: "Open butterfly doodle",
+    width: 74,
+    height: 60,
+    style: { bottom: "17%", left: "18%", opacity: "0.74", transform: "rotate(3deg)" }
   },
   {
-    src: "/assets/doodles/bee-sticker.png",
-    alt: "Bee sticker",
-    width: 144,
-    height: 127,
-    style: { bottom: "7.6%", left: "47.5%" }
+    src: "/assets/doodles/brown-butterfly-doodle.png",
+    alt: "Brown butterfly doodle",
+    width: 78,
+    height: 49,
+    style: { bottom: "13%", right: "16%", opacity: "0.79", transform: "rotate(-4deg)" }
   },
   {
-    src: "/assets/doodles/brown-butterfly-downturned.png",
-    alt: "Brown butterfly sticker",
-    width: 168,
-    height: 105,
-    style: { bottom: "10.3%", right: "15%" }
+    src: "/assets/doodles/orchid-doodle.png",
+    alt: "Orchid doodle",
+    width: 56,
+    height: 85,
+    style: { bottom: "8%", right: "5%", opacity: "0.7", transform: "rotate(5deg)" }
+  }
+];
+
+export const creationsDoodles: DoodleAsset[] = [
+  {
+    src: "/assets/doodles/record-doodle.png",
+    alt: "Record doodle",
+    width: 50,
+    height: 41,
+    style: { top: "12%", right: "8%", opacity: "0.55", transform: "rotate(6deg)" }
   },
   {
-    src: "/assets/doodles/orchid-sticker.png",
-    alt: "Orchid sticker",
-    width: 112,
-    height: 171,
-    style: { bottom: "5.9%", right: "5.4%" }
+    src: "/assets/doodles/oleander-doodle-flip.png",
+    alt: "Oleander doodle",
+    width: 42,
+    height: 64,
+    style: { top: "38%", left: "4%", opacity: "0.58", transform: "rotate(-5deg)" }
+  },
+  {
+    src: "/assets/doodles/frog-doodle.png",
+    alt: "Frog doodle",
+    width: 46,
+    height: 56,
+    style: { bottom: "9%", right: "7%", opacity: "0.6", transform: "rotate(4deg)" }
   }
 ];
 
 export const creationsGallery: Array<
-  CropAsset & {
+  {
     key: string;
-    label: string;
-    shape: "portrait" | "square" | "landscape";
+    src: string;
+    alt: string;
   }
 > = [
   {
-    key: "flower",
-    src: "/assets/creations/wtc-info-clay.png",
-    alt: "Clay flower creation in progress",
-    objectPosition: "28% 79%",
-    label: "flower",
-    shape: "portrait"
+    key: "watermelon",
+    src: "/assets/creations/clear-bg/watermelon.png",
+    alt: "Watermelon clay dish"
   },
   {
-    key: "manta",
-    src: "/assets/creations/thank-you-creations.png",
-    alt: "Clay manta ray creation",
-    objectPosition: "78% 18%",
-    label: "manta ray",
-    shape: "square"
+    key: "mini-landscape",
+    src: "/assets/creations/clear-bg/mini-landscape.png",
+    alt: "Mini clay landscape dish"
   },
   {
-    key: "cup",
-    src: "/assets/creations/sign-up-cup.png",
-    alt: "Clay cup creation",
-    objectPosition: "26% 75%",
-    label: "cup",
-    shape: "portrait"
+    key: "waffle",
+    src: "/assets/creations/clear-bg/waffle.png",
+    alt: "Clay waffle dish"
   },
   {
-    key: "palette",
-    src: "/assets/creations/paint-palette.png",
-    alt: "Clay turtle palette creation",
-    objectPosition: "50% 35%",
-    label: "palette",
-    shape: "landscape"
+    key: "duck-bowl",
+    src: "/assets/creations/clear-bg/duck-bowl.png",
+    alt: "Clay duck pond bowl"
   },
   {
-    key: "cat",
-    src: "/assets/creations/flyer-clay-pieces.png",
-    alt: "Clay cat face creation",
-    objectPosition: "49% 24%",
-    label: "cat",
-    shape: "square"
+    key: "blue-creature",
+    src: "/assets/creations/clear-bg/blue-creature.png",
+    alt: "Blue clay creature"
+  },
+  {
+    key: "cat-pond",
+    src: "/assets/creations/clear-bg/cat-pond.png",
+    alt: "Clay cat floating by a pond"
+  },
+  {
+    key: "owl",
+    src: "/assets/creations/clear-bg/owl.png",
+    alt: "Clay owl with leaves"
+  },
+  {
+    key: "manta-ray",
+    src: "/assets/creations/clear-bg/manta-ray.png",
+    alt: "Clay manta ray"
+  },
+  {
+    key: "elephant",
+    src: "/assets/creations/clear-bg/elephant.png",
+    alt: "Clay elephant"
+  },
+  {
+    key: "axolotl",
+    src: "/assets/creations/clear-bg/axolotl.png",
+    alt: "Clay axolotl"
+  },
+  {
+    key: "mushroom",
+    src: "/assets/creations/clear-bg/mushroom.png",
+    alt: "Clay mushroom candle holder"
+  },
+  {
+    key: "flower-dish",
+    src: "/assets/creations/clear-bg/flower-dish.png",
+    alt: "Clay flower dish"
   }
 ];
 

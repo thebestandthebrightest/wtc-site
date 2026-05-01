@@ -15,15 +15,12 @@ export default function TeamPage() {
           </p>
         </div>
         <div className="team-spotlights">
-          {teamMembers.map((member, index) => {
-            const reverse = index % 2 === 1;
+          {teamMembers.map((member) => {
             const textOnly = !member.imageSrc;
 
             return (
               <article
-                className={`team-spotlight${
-                  reverse ? " team-spotlight--reverse" : ""
-                }${textOnly ? " team-spotlight--text-only" : ""}`}
+                className={`team-spotlight${textOnly ? " team-spotlight--text-only" : ""}`}
                 key={`${member.name}-${member.role}`}
               >
                 {member.imageSrc ? (
@@ -33,7 +30,7 @@ export default function TeamPage() {
                         src={member.imageSrc}
                         alt={member.imageAlt ?? `${member.name} portrait`}
                         fill
-                        sizes="(max-width: 960px) 100vw, 520px"
+                        sizes="(max-width: 960px) 220px, 260px"
                         style={{
                           objectFit: "cover",
                           objectPosition: member.imagePosition ?? "center top"
@@ -44,7 +41,7 @@ export default function TeamPage() {
                 ) : null}
                 <div className="team-spotlight__content">
                   <h2 className="team-card__name">{member.name}</h2>
-                  <h3 className="team-card__role">{member.role}</h3>
+                  <p className="team-card__meta">{member.meta}</p>
                   <p
                     className={`team-card__bio${
                       member.bio === "Bio forthcoming."
@@ -60,10 +57,10 @@ export default function TeamPage() {
           })}
         </div>
         <section className="team-photo-section">
-          <h2 className="team-photo-section__title">Team 2025</h2>
+          <h2 className="team-photo-section__title">Team 2026</h2>
           <div className="team-photo-section__image">
             <Image
-              src="/assets/team/wtc-team-2025.png"
+              src="/assets/team/wtc-team-2026.png"
               alt="Wellness Through Clay team photo"
               width={1860}
               height={1390}

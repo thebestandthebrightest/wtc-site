@@ -11,7 +11,7 @@ export default function HomePage() {
         {homeDoodles.map((asset) => (
           <Image
             key={asset.src}
-            className="home-sticker"
+            className="home-doodle"
             src={asset.src}
             alt={asset.alt}
             width={asset.width}
