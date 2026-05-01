@@ -228,7 +228,7 @@ select {
   grid-template-columns: minmax(260px, 0.85fr) minmax(320px, 1fr);
   gap: 72px;
   align-items: start;
-  margin-bottom: 112px;
+  margin-bottom: 128px;
 }
 
 .team-page__lede {
@@ -243,39 +243,33 @@ select {
 .team-spotlights {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 72px 82px;
+  gap: 86px 88px;
   align-items: start;
 }
 
 .team-spotlight {
   display: grid;
-  grid-template-columns: minmax(176px, 228px) minmax(0, 1fr);
-  gap: 26px 32px;
+  grid-template-columns: minmax(188px, 236px) minmax(0, 1fr);
+  gap: 30px 34px;
   align-items: start;
-  min-height: 100%;
-  padding: 0;
-  border: 1px solid rgba(231, 148, 141, 0.12);
-  border-radius: 8px;
-  background: rgba(255, 248, 244, 0.02);
 }
 
 .team-spotlight__frame {
   position: relative;
-  width: min(100%, 228px);
+  width: min(100%, 236px);
   aspect-ratio: 4 / 5;
   overflow: hidden;
-  border-radius: 8px 0 0 8px;
-  background: rgba(255, 248, 244, 0.06);
+  border-radius: 6px;
 }
 
 .team-spotlight__media {
   display: flex;
-  align-self: stretch;
+  align-self: start;
 }
 
 .team-spotlight__content {
-  padding: 20px 24px 24px 0;
-  max-width: 640px;
+  max-width: 430px;
+  padding-top: 2px;
 }
 
 .team-spotlight--text-only {
@@ -283,38 +277,38 @@ select {
 }
 
 .team-spotlight--text-only .team-spotlight__content {
-  max-width: 100%;
-  padding: 24px 28px 28px;
+  max-width: 430px;
+  padding-top: 0;
 }
 
 .team-card__name {
-  margin: 0 0 10px;
+  margin: 0 0 12px;
   color: var(--wtc-text);
   font-family: "Playfair Display", "Iowan Old Style", "Book Antiqua", "Palatino Linotype", Georgia, serif;
-  font-size: clamp(28px, 2.3vw, 32px);
-  font-weight: 600;
-  line-height: 1.1;
-  letter-spacing: -0.02em;
+  font-size: clamp(24px, 2vw, 30px);
+  font-weight: 500;
+  line-height: 1.08;
+  letter-spacing: -0.015em;
 }
 
 .team-card__meta {
-  margin: 0 0 18px;
+  margin: 0 0 20px;
   color: var(--wtc-text-muted);
-  font-family: Inter, var(--wtc-sans);
-  font-size: clamp(13px, 1.1vw, 14px);
+  font-family: "Playfair Display", "Iowan Old Style", "Book Antiqua", "Palatino Linotype", Georgia, serif;
+  font-size: clamp(15px, 1.2vw, 18px);
   font-weight: 400;
-  line-height: 1.45;
+  line-height: 1.35;
   letter-spacing: 0.02em;
 }
 
 .team-card__bio {
-  max-width: 640px;
+  max-width: 430px;
   margin: 0;
   color: rgba(255, 248, 244, 0.92);
   font-family: Inter, var(--wtc-sans);
-  font-size: clamp(15px, 1.25vw, 16px);
+  font-size: clamp(14px, 1.05vw, 15px);
   font-weight: 400;
-  line-height: 1.65;
+  line-height: 1.72;
 }
 
 .team-card__bio--muted {
@@ -322,21 +316,41 @@ select {
 }
 
 .team-photo-section {
-  margin-top: 118px;
+  margin-top: 132px;
 }
 
 .team-photo-section__title {
   margin: 0 0 26px;
   color: var(--wtc-text);
-  font-size: clamp(38px, 3vw, 48px);
+  font-size: clamp(28px, 2.2vw, 34px);
   font-weight: 500;
+}
+
+.team-photo-section__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 34px;
+  align-items: start;
+}
+
+.team-photo-figure {
+  margin: 0;
+}
+
+.team-photo-figure__label {
+  margin: 0 0 12px;
+  color: var(--wtc-text-muted);
+  font-family: Inter, var(--wtc-sans);
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 }
 
 .team-photo-section__image {
   overflow: hidden;
-  border: 1px solid rgba(231, 148, 141, 0.16);
   border-radius: 8px;
-  background: rgba(255, 248, 244, 0.02);
+  max-width: 760px;
 }
 
 .team-photo {
@@ -448,12 +462,12 @@ select {
   }
 
   .team-spotlights {
-    gap: 56px 44px;
+    gap: 68px 52px;
   }
 
   .team-spotlight {
     grid-template-columns: minmax(164px, 210px) minmax(0, 1fr);
-    gap: 22px 24px;
+    gap: 24px 24px;
   }
 
   .team-spotlight__frame {
@@ -502,7 +516,7 @@ select {
 
   .team-page__intro {
     gap: 28px;
-    margin-bottom: 78px;
+    margin-bottom: 82px;
   }
 
   .team-page__lede {
@@ -511,7 +525,7 @@ select {
 
   .team-spotlights {
     grid-template-columns: 1fr;
-    gap: 34px;
+    gap: 42px;
   }
 
   .team-spotlight,
@@ -527,11 +541,17 @@ select {
   }
 
   .team-spotlight__content {
-    padding: 0 20px 20px;
+    max-width: 100%;
+    padding-top: 0;
   }
 
   .team-spotlight--text-only .team-spotlight__content {
-    padding: 20px;
+    max-width: 100%;
+  }
+
+  .team-photo-section__grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
   }
 
   .signup-page__title {

@@ -57,16 +57,34 @@ export default function TeamPage() {
           })}
         </div>
         <section className="team-photo-section">
-          <h2 className="team-photo-section__title">Team 2026</h2>
-          <div className="team-photo-section__image">
-            <Image
-              src="/assets/team/wtc-team-2026.png"
-              alt="Wellness Through Clay team photo"
-              width={1860}
-              height={1390}
-              sizes="(max-width: 1200px) 100vw, 1200px"
-              className="team-photo"
-            />
+          <h2 className="team-photo-section__title">Team Photos</h2>
+          <div className="team-photo-section__grid">
+            <figure className="team-photo-figure">
+              <figcaption className="team-photo-figure__label">Team 2026</figcaption>
+              <div className="team-photo-section__image">
+                <Image
+                  src="/assets/team/wtc-team-2026.png"
+                  alt="Wellness Through Clay 2026 team photo"
+                  width={1860}
+                  height={1390}
+                  sizes="(max-width: 1200px) 100vw, 960px"
+                  className="team-photo"
+                />
+              </div>
+            </figure>
+            <figure className="team-photo-figure">
+              <figcaption className="team-photo-figure__label">Team 2025</figcaption>
+              <div className="team-photo-section__image">
+                <Image
+                  src="/assets/team/wtc-team-2025.png"
+                  alt="Wellness Through Clay 2025 team photo"
+                  width={1860}
+                  height={1390}
+                  sizes="(max-width: 1200px) 100vw, 960px"
+                  className="team-photo"
+                />
+              </div>
+            </figure>
           </div>
         </section>
       </section>
