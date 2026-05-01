@@ -14,10 +14,10 @@ export default function TeamPage() {
             love for purposeful work, thoughtful design, and real connection.
           </p>
         </div>
-        <div className="team-spotlights">
-          {teamMembers.map((member, idx) => (
+        <div className="team-grid">
+          {teamMembers.map((member) => (
             <section
-              className={`team-spotlight${idx % 2 === 1 ? " team-spotlight--reversed" : ""}`}
+              className="team-spotlight"
               key={member.name}
             >
               <div className="team-spotlight__inner">

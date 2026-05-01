@@ -203,13 +203,20 @@ select {
 }
 
 .about-copy {
-  max-width: 1480px;
-  font-size: clamp(24px, 2vw, 29px);
-  line-height: 1.52;
+  max-width: 1100px;
+  font-family: "Cormorant Garamond", "Iowan Old Style", "Book Antiqua", "Palatino Linotype", Georgia, serif;
+  font-size: clamp(20px, 1.55vw, 22px);
+  line-height: 1.58;
+  color: var(--wtc-text-soft);
 }
 
 .about-copy p {
-  margin: 0 0 34px;
+  margin: 0 0 32px;
+}
+
+.about-page .page-heading {
+  font-size: clamp(48px, 4vw, 64px);
+  margin-bottom: 40px;
 }
 
 .about-copy__underline {
@@ -240,37 +247,38 @@ select {
   color: var(--wtc-white);
 }
 
-.team-spotlights {
-  display: block;
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 96px;
+  row-gap: 96px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.team-spotlight {
-  display: flex;
-  justify-content: flex-start;
-  margin-bottom: 120px;
-}
-
+.team-spotlight,
 .team-spotlight--reversed {
-  justify-content: flex-end;
+  display: block;
+  margin-bottom: 0;
 }
 
 .team-spotlight__inner {
   display: grid;
-  grid-template-columns: 260px minmax(320px, 520px);
-  gap: 40px;
+  grid-template-columns: 220px 1fr;
+  gap: 32px;
   align-items: start;
-  max-width: 840px;
+  max-width: none;
 }
 
 .team-portrait {
-  width: 260px;
-  height: 320px;
+  width: 220px;
+  height: 280px;
   object-fit: contain;
   display: block;
 }
 
 .team-copy {
-  max-width: 520px;
+  max-width: 420px;
 }
 
 .team-card__name {
@@ -453,10 +461,8 @@ select {
     padding-right: 0;
   }
 
-  .team-spotlight__inner {
-    gap: 28px;
-  }
 }
+
 
 @media (max-width: 960px) {
   .page-shell__inner {
@@ -506,9 +512,9 @@ select {
     max-width: 100%;
   }
 
-  .team-spotlight,
-  .team-spotlight--reversed {
-    justify-content: flex-start;
+  .team-grid {
+    grid-template-columns: 1fr;
+    row-gap: 72px;
   }
 
   .team-spotlight__inner {
@@ -579,7 +585,7 @@ select {
   }
 
   .about-copy {
-    font-size: 21px;
+    font-size: 20px;
   }
 
   .team-page__lede {
