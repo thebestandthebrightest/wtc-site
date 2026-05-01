@@ -1,0 +1,20 @@
+<svg width="1280" height="860" viewBox="0 0 1280 860" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1280" height="860" fill="#F3F0EC"/>
+  <path d="M123 94L1112 147" stroke="#D2CEC8" stroke-width="4"/>
+  <path d="M65 216L1160 255" stroke="#D2CEC8" stroke-width="3"/>
+  <path d="M93 330L1184 386" stroke="#D2CEC8" stroke-width="4"/>
+  <path d="M55 498L1190 507" stroke="#D2CEC8" stroke-width="3"/>
+  <path d="M122 645L1155 616" stroke="#D2CEC8" stroke-width="4"/>
+  <path d="M165 789L1122 708" stroke="#D2CEC8" stroke-width="3"/>
+  <path d="M171 38L247 836" stroke="#D2CEC8" stroke-width="4"/>
+  <path d="M406 29L466 834" stroke="#D2CEC8" stroke-width="3"/>
+  <path d="M643 45L687 824" stroke="#D2CEC8" stroke-width="4"/>
+  <path d="M895 40L942 813" stroke="#D2CEC8" stroke-width="3"/>
+  <path d="M1118 56L1045 826" stroke="#D2CEC8" stroke-width="4"/>
+  <path d="M736 0C773 114 789 230 807 430C819 563 849 689 918 860H1280V0H736Z" fill="#DDE8F1"/>
+  <path d="M629 230C664 286 692 350 697 419C704 520 660 633 580 743" stroke="#BFC8CE" stroke-width="14" stroke-linecap="round"/>
+  <circle cx="642" cy="448" r="26" fill="#141010"/>
+  <path d="M642 504C669 469 684 442 684 417C684 393 665 374 642 374C619 374 600 393 600 417C600 442 615 469 642 504Z" fill="#141010"/>
+  <rect x="72" y="711" width="330" height="86" fill="#FFF8F4" fill-opacity="0.72"/>
+  <text x="105" y="763" fill="#A7A09A" font-family="Arial, Helvetica, sans-serif" font-size="36">WTC Location Map Placeholder</text>
+</svg>
