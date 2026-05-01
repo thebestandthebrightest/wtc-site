@@ -7,12 +7,8 @@ export default function TeamPage() {
   return (
     <PageShell active="team">
       <section className="content-page team-page">
-        <div className="team-page__intro">
+        <div className="team-hero">
           <h1 className="page-heading">Our Team</h1>
-          <p className="team-page__lede">
-            We bring different perspectives to the table, but we’re united by a
-            love for purposeful work, thoughtful design, and real connection.
-          </p>
         </div>
         <div className="team-grid">
           {teamMembers.map((member) => (

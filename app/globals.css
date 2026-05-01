@@ -242,28 +242,15 @@ select {
   max-width: 1760px;
 }
 
-.team-page__intro {
-  display: grid;
-  grid-template-columns: minmax(260px, 0.85fr) minmax(320px, 1fr);
-  gap: 72px;
-  align-items: start;
-  margin-bottom: 128px;
-}
-
-.team-page__lede {
-  max-width: 760px;
-  margin-top: 18px;
-  font-family: var(--wtc-sans);
-  font-size: clamp(24px, 2vw, 30px);
-  line-height: 1.35;
-  color: var(--wtc-white);
+.team-hero {
+  margin-bottom: 72px;
 }
 
 .team-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  column-gap: 96px;
-  row-gap: 96px;
+  column-gap: 80px;
+  row-gap: 72px;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -276,15 +263,15 @@ select {
 
 .team-spotlight__inner {
   display: grid;
-  grid-template-columns: 220px 1fr;
-  gap: 32px;
+  grid-template-columns: 300px 1fr;
+  gap: 28px;
   align-items: start;
   max-width: none;
 }
 
 .team-portrait {
-  width: 220px;
-  height: 280px;
+  width: 300px;
+  height: 360px;
   object-fit: contain;
   display: block;
 }
@@ -512,18 +499,8 @@ select {
     font-size: 26px;
   }
 
-  .team-page__intro,
   .signup-layout {
     grid-template-columns: 1fr;
-  }
-
-  .team-page__intro {
-    gap: 28px;
-    margin-bottom: 82px;
-  }
-
-  .team-page__lede {
-    max-width: 100%;
   }
 
   .team-grid {
@@ -607,14 +584,6 @@ select {
 
   .about-copy {
     font-size: 20px;
-  }
-
-  .team-page__lede {
-    font-size: 21px;
-  }
-
-  .team-page__intro {
-    margin-bottom: 64px;
   }
 
   .signup-aside {
