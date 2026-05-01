@@ -16,42 +16,43 @@ export default function TeamPage() {
         </div>
         <div className="team-spotlights">
           {teamMembers.map((member, idx) => {
-            const textOnly = !member.imageSrc;
-            const isReversed = !textOnly && idx % 2 === 1;
+            const isReversed = idx % 2 === 1;
 
             return (
               <article
-                className={`team-spotlight${textOnly ? " team-spotlight--text-only" : ""}${isReversed ? " team-spotlight--reversed" : ""}`}
+                className={`team-spotlight${isReversed ? " team-spotlight--reversed" : ""}`}
                 key={`${member.name}-${member.role}`}
               >
-                {member.imageSrc ? (
-                  <div className="team-spotlight__media">
-                    <div className="team-spotlight__frame">
-                      <Image
-                        src={member.imageSrc}
-                        alt={member.imageAlt ?? `${member.name} portrait`}
-                        fill
-                        sizes="(max-width: 960px) 220px, 260px"
-                        style={{
-                          objectFit: "cover",
-                          objectPosition: member.imagePosition ?? "center top"
-                        }}
-                      />
+                <div className="team-spotlight__inner">
+                  {member.imageSrc ? (
+                    <div className="team-spotlight__media">
+                      <div className="team-spotlight__frame">
+                        <Image
+                          src={member.imageSrc}
+                          alt={member.imageAlt ?? `${member.name} portrait`}
+                          fill
+                          sizes="(max-width: 960px) 220px, 260px"
+                          style={{
+                            objectFit: "cover",
+                            objectPosition: member.imagePosition ?? "center top"
+                          }}
+                        />
+                      </div>
                     </div>
+                  ) : null}
+                  <div className="team-spotlight__content">
+                    <h2 className="team-card__name">{member.name}</h2>
+                    <p className="team-card__meta">{member.meta}</p>
+                    <p
+                      className={`team-card__bio${
+                        member.bio === "Bio forthcoming."
+                          ? " team-card__bio--muted"
+                          : ""
+                      }`}
+                    >
+                      {member.bio}
+                    </p>
                   </div>
-                ) : null}
-                <div className="team-spotlight__content">
-                  <h2 className="team-card__name">{member.name}</h2>
-                  <p className="team-card__meta">{member.meta}</p>
-                  <p
-                    className={`team-card__bio${
-                      member.bio === "Bio forthcoming."
-                        ? " team-card__bio--muted"
-                        : ""
-                    }`}
-                  >
-                    {member.bio}
-                  </p>
                 </div>
               </article>
             );
