@@ -228,7 +228,7 @@ select {
   grid-template-columns: minmax(260px, 0.85fr) minmax(320px, 1fr);
   gap: 72px;
   align-items: start;
-  margin-bottom: 140px;
+  margin-bottom: 112px;
 }
 
 .team-page__lede {
@@ -242,35 +242,39 @@ select {
 
 .team-spotlights {
   display: grid;
-  gap: 28px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 72px 82px;
+  align-items: start;
 }
 
 .team-spotlight {
   display: grid;
-  grid-template-columns: minmax(220px, 260px) minmax(0, 1fr);
-  gap: 24px 40px;
+  grid-template-columns: minmax(176px, 228px) minmax(0, 1fr);
+  gap: 26px 32px;
   align-items: start;
-  padding: 24px 24px 28px;
-  border: 1px solid #e5e5e5;
-  border-radius: 6px;
-  background: #fafaf9;
+  min-height: 100%;
+  padding: 0;
+  border: 1px solid rgba(231, 148, 141, 0.12);
+  border-radius: 8px;
+  background: rgba(255, 248, 244, 0.02);
 }
 
 .team-spotlight__frame {
   position: relative;
-  width: min(100%, 260px);
-  aspect-ratio: 1 / 1;
+  width: min(100%, 228px);
+  aspect-ratio: 4 / 5;
   overflow: hidden;
-  border-radius: 6px;
-  background: #f5f5f4;
+  border-radius: 8px 0 0 8px;
+  background: rgba(255, 248, 244, 0.06);
 }
 
 .team-spotlight__media {
   display: flex;
-  width: min(100%, 260px);
+  align-self: stretch;
 }
 
 .team-spotlight__content {
+  padding: 20px 24px 24px 0;
   max-width: 640px;
 }
 
@@ -279,12 +283,13 @@ select {
 }
 
 .team-spotlight--text-only .team-spotlight__content {
-  max-width: 860px;
+  max-width: 100%;
+  padding: 24px 28px 28px;
 }
 
 .team-card__name {
   margin: 0 0 10px;
-  color: #171717;
+  color: var(--wtc-text);
   font-family: "Playfair Display", "Iowan Old Style", "Book Antiqua", "Palatino Linotype", Georgia, serif;
   font-size: clamp(28px, 2.3vw, 32px);
   font-weight: 600;
@@ -294,7 +299,7 @@ select {
 
 .team-card__meta {
   margin: 0 0 18px;
-  color: #737373;
+  color: var(--wtc-text-muted);
   font-family: Inter, var(--wtc-sans);
   font-size: clamp(13px, 1.1vw, 14px);
   font-weight: 400;
@@ -305,7 +310,7 @@ select {
 .team-card__bio {
   max-width: 640px;
   margin: 0;
-  color: #404040;
+  color: rgba(255, 248, 244, 0.92);
   font-family: Inter, var(--wtc-sans);
   font-size: clamp(15px, 1.25vw, 16px);
   font-weight: 400;
@@ -313,11 +318,11 @@ select {
 }
 
 .team-card__bio--muted {
-  color: #525252;
+  color: rgba(255, 248, 244, 0.82);
 }
 
 .team-photo-section {
-  margin-top: 110px;
+  margin-top: 118px;
 }
 
 .team-photo-section__title {
@@ -329,9 +334,9 @@ select {
 
 .team-photo-section__image {
   overflow: hidden;
-  border: 1px solid #e5e5e5;
-  border-radius: 6px;
-  background: #fafaf9;
+  border: 1px solid rgba(231, 148, 141, 0.16);
+  border-radius: 8px;
+  background: rgba(255, 248, 244, 0.02);
 }
 
 .team-photo {
@@ -442,8 +447,17 @@ select {
     padding-right: 0;
   }
 
+  .team-spotlights {
+    gap: 56px 44px;
+  }
+
   .team-spotlight {
-    grid-template-columns: minmax(220px, 260px) minmax(0, 1fr);
+    grid-template-columns: minmax(164px, 210px) minmax(0, 1fr);
+    gap: 22px 24px;
+  }
+
+  .team-spotlight__frame {
+    width: min(100%, 210px);
   }
 }
 
@@ -495,14 +509,29 @@ select {
     max-width: 100%;
   }
 
+  .team-spotlights {
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+
   .team-spotlight,
   .team-spotlight--text-only {
     grid-template-columns: 1fr;
-    gap: 26px;
+    gap: 18px;
   }
 
   .team-spotlight__frame {
+    width: min(100%, 260px);
     max-width: 260px;
+    border-radius: 8px;
+  }
+
+  .team-spotlight__content {
+    padding: 0 20px 20px;
+  }
+
+  .team-spotlight--text-only .team-spotlight__content {
+    padding: 20px;
   }
 
   .signup-page__title {
@@ -564,6 +593,10 @@ select {
 
   .team-page__lede {
     font-size: 21px;
+  }
+
+  .team-page__intro {
+    margin-bottom: 64px;
   }
 
   .signup-aside {
