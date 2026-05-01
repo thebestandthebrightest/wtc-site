@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap');
+
 :root {
   --wtc-bg: #641f1f;
   --wtc-text: #e7948d;
@@ -16,6 +18,12 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  font-family: 'Cormorant Garamond', "Iowan Old Style", "Book Antiqua", "Palatino Linotype", Georgia, serif;
+  letter-spacing: 0.2px;
+}
+
 html {
   background: #000;
 }
@@ -25,8 +33,12 @@ body {
   min-width: 320px;
   background: var(--wtc-bg);
   color: var(--wtc-text-soft);
-  font-family: "Cormorant Garamond", "Iowan Old Style", "Book Antiqua", "Palatino Linotype", Georgia, serif;
   text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3 {
+  font-weight: 500;
+  letter-spacing: 0.5px;
 }
 
 a {
@@ -365,44 +377,46 @@ select {
   padding-bottom: 44px;
 }
 
-.creations-page__header {
+.creations-hero {
   display: flex;
-  flex-wrap: wrap;
-  gap: 18px 44px;
-  align-items: end;
   justify-content: space-between;
-  margin-bottom: 48px;
+  align-items: flex-end;
+  margin-bottom: 80px;
 }
 
-.creations-page__note {
-  max-width: 460px;
+.creations-title {
   margin: 0;
-  font-family: var(--wtc-sans);
-  font-size: 19px;
-  line-height: 1.55;
-  color: var(--wtc-text-soft);
+  color: var(--wtc-text);
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+.creations-subtext {
+  max-width: 420px;
+  margin: 0;
+  color: #f5e9e2;
+  font-size: 18px;
+  line-height: 1.6;
   text-align: right;
 }
 
 .creations-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 26px;
-  align-items: start;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 80px 60px;
+  margin-top: 40px;
 }
 
-.creations-piece {
+.creations-item {
   margin: 0;
 }
 
-.creations-piece__media {
-  position: relative;
-  min-height: 230px;
-  overflow: hidden;
-  aspect-ratio: 1 / 1;
-  border: 1px solid #e5e5e5;
-  border-radius: 6px;
-  background: #fafaf9;
+.creations-item img {
+  width: 100%;
+  max-width: 220px;
+  height: auto;
+  object-fit: contain;
 }
 
 .creations-doodle {
@@ -539,16 +553,23 @@ select {
     padding-top: 0;
   }
 
-  .creations-page__header {
-    justify-content: start;
+  .creations-hero {
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
   }
 
-  .creations-page__note {
+  .creations-title {
+    font-size: 48px;
+  }
+
+  .creations-subtext {
     text-align: left;
   }
 
   .creations-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
   }
 }
 
@@ -607,6 +628,7 @@ select {
   }
 
   .creations-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
   }
 }

@@ -6,27 +6,22 @@ export default function CreationsPage() {
   return (
     <PageShell active="creations">
       <section className="content-page creations-page">
-        <div className="creations-page__header">
-          <h1 className="page-heading">Creations</h1>
-          <p className="creations-page__note">
+        <div className="creations-hero">
+          <h1 className="creations-title">Creations</h1>
+          <p className="creations-subtext">
             A gallery of pieces made through Wellness Through Clay sessions.
           </p>
         </div>
 
         <div className="creations-grid" aria-label="Clay creations gallery">
           {creationsGallery.map((piece) => (
-            <figure className="creations-piece" key={piece.key}>
+            <figure className="creations-item" key={piece.key}>
               <Image
                 src={piece.src}
                 alt={piece.alt}
                 width={400}
                 height={400}
-                sizes="(max-width: 640px) 100vw, (max-width: 960px) 50vw, 25vw"
-                style={{
-                  objectFit: "contain",
-                  width: "100%",
-                  height: "auto",
-                }}
+                sizes="(max-width: 640px) 50vw, (max-width: 960px) 25vw, 220px"
               />
             </figure>
           ))}
