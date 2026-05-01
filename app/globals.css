@@ -241,15 +241,13 @@ select {
 }
 
 .team-spotlights {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 86px 88px;
-  align-items: start;
+  display: block;
 }
 
 .team-spotlight {
   display: flex;
   justify-content: flex-start;
+  margin-bottom: 120px;
 }
 
 .team-spotlight--reversed {
@@ -258,37 +256,21 @@ select {
 
 .team-spotlight__inner {
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: 260px minmax(320px, 520px);
   gap: 40px;
   align-items: start;
-  max-width: 900px;
+  max-width: 840px;
 }
 
-.team-spotlight__frame {
-  position: relative;
-  width: min(100%, 236px);
-  aspect-ratio: 4 / 5;
-  overflow: hidden;
-  border-radius: 6px;
+.team-portrait {
+  width: 260px;
+  height: 320px;
+  object-fit: contain;
+  display: block;
 }
 
-.team-spotlight__media {
-  display: flex;
-  align-self: start;
-}
-
-.team-spotlight__content {
-  max-width: 430px;
-  padding-top: 2px;
-}
-
-.team-spotlight--text-only {
-  grid-template-columns: minmax(0, 1fr);
-}
-
-.team-spotlight--text-only .team-spotlight__content {
-  max-width: 430px;
-  padding-top: 0;
+.team-copy {
+  max-width: 520px;
 }
 
 .team-card__name {
@@ -471,16 +453,8 @@ select {
     padding-right: 0;
   }
 
-  .team-spotlights {
-    gap: 68px 52px;
-  }
-
   .team-spotlight__inner {
     gap: 28px;
-  }
-
-  .team-spotlight__frame {
-    width: min(100%, 210px);
   }
 }
 
@@ -532,33 +506,18 @@ select {
     max-width: 100%;
   }
 
-  .team-spotlights {
-    grid-template-columns: 1fr;
-    gap: 42px;
-  }
-
   .team-spotlight,
-  .team-spotlight__inner {
-    display: block;
-  }
-
   .team-spotlight--reversed {
-    justify-content: initial;
+    justify-content: flex-start;
   }
 
-  .team-spotlight__frame {
-    width: min(100%, 260px);
-    max-width: 260px;
-    border-radius: 8px;
+  .team-spotlight__inner {
+    grid-template-columns: 1fr;
   }
 
-  .team-spotlight__content {
-    max-width: 100%;
-    padding-top: 0;
-  }
-
-  .team-spotlight--text-only .team-spotlight__content {
-    max-width: 100%;
+  .team-portrait {
+    width: 240px;
+    height: auto;
   }
 
   .team-photo-section__grid {

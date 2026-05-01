@@ -15,48 +15,34 @@ export default function TeamPage() {
           </p>
         </div>
         <div className="team-spotlights">
-          {teamMembers.map((member, idx) => {
-            const isReversed = idx % 2 === 1;
-
-            return (
-              <article
-                className={`team-spotlight${isReversed ? " team-spotlight--reversed" : ""}`}
-                key={`${member.name}-${member.role}`}
-              >
-                <div className="team-spotlight__inner">
-                  {member.imageSrc ? (
-                    <div className="team-spotlight__media">
-                      <div className="team-spotlight__frame">
-                        <Image
-                          src={member.imageSrc}
-                          alt={member.imageAlt ?? `${member.name} portrait`}
-                          fill
-                          sizes="(max-width: 960px) 220px, 260px"
-                          style={{
-                            objectFit: "cover",
-                            objectPosition: member.imagePosition ?? "center top"
-                          }}
-                        />
-                      </div>
-                    </div>
-                  ) : null}
-                  <div className="team-spotlight__content">
-                    <h2 className="team-card__name">{member.name}</h2>
-                    <p className="team-card__meta">{member.meta}</p>
-                    <p
-                      className={`team-card__bio${
-                        member.bio === "Bio forthcoming."
-                          ? " team-card__bio--muted"
-                          : ""
-                      }`}
-                    >
-                      {member.bio}
-                    </p>
-                  </div>
+          {teamMembers.map((member, idx) => (
+            <section
+              className={`team-spotlight${idx % 2 === 1 ? " team-spotlight--reversed" : ""}`}
+              key={member.name}
+            >
+              <div className="team-spotlight__inner">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={member.imageSrc ?? ""}
+                  alt={`${member.name} team portrait`}
+                  className="team-portrait"
+                />
+                <div className="team-copy">
+                  <h2 className="team-card__name">{member.name}</h2>
+                  <p className="team-card__meta">{member.meta}</p>
+                  <p
+                    className={`team-card__bio${
+                      member.bio === "Bio forthcoming."
+                        ? " team-card__bio--muted"
+                        : ""
+                    }`}
+                  >
+                    {member.bio}
+                  </p>
                 </div>
-              </article>
-            );
-          })}
+              </div>
+            </section>
+          ))}
         </div>
         <section className="team-photo-section">
           <h2 className="team-photo-section__title">Team Photos</h2>
