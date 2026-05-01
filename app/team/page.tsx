@@ -15,12 +15,13 @@ export default function TeamPage() {
           </p>
         </div>
         <div className="team-spotlights">
-          {teamMembers.map((member) => {
+          {teamMembers.map((member, idx) => {
             const textOnly = !member.imageSrc;
+            const isReversed = !textOnly && idx % 2 === 1;
 
             return (
               <article
-                className={`team-spotlight${textOnly ? " team-spotlight--text-only" : ""}`}
+                className={`team-spotlight${textOnly ? " team-spotlight--text-only" : ""}${isReversed ? " team-spotlight--reversed" : ""}`}
                 key={`${member.name}-${member.role}`}
               >
                 {member.imageSrc ? (
@@ -60,7 +61,7 @@ export default function TeamPage() {
           <h2 className="team-photo-section__title">Team Photos</h2>
           <div className="team-photo-section__grid">
             <figure className="team-photo-figure">
-              <figcaption className="team-photo-figure__label">Team 2026</figcaption>
+              <figcaption className="team-photo-figure__label">Team &apos;26</figcaption>
               <div className="team-photo-section__image">
                 <Image
                   src="/assets/team/wtc-team-2026.png"
@@ -73,7 +74,7 @@ export default function TeamPage() {
               </div>
             </figure>
             <figure className="team-photo-figure">
-              <figcaption className="team-photo-figure__label">Team 2025</figcaption>
+              <figcaption className="team-photo-figure__label">Team &apos;25</figcaption>
               <div className="team-photo-section__image">
                 <Image
                   src="/assets/team/wtc-team-2025.png"

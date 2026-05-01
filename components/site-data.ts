@@ -63,7 +63,7 @@ export const teamMembers: TeamMember[] = [
     role: "Vice President",
     meta: "Vice President · Class of 2027 · Jefferson, NJ · Genetics + Data Science",
     bio: "Saulė (Class of 2027) is originally from Lithuania but has been living in Jefferson, New Jersey, for the past few years. She is majoring in Genetics with a minor in Data Science while also working as a chess instructor and an ODASIS Supplemental Instructor. Passionate about bringing creativity into everyday life, she strives to inspire others to do the same. Her favorite creative outlets include photography, fashion, writing, playing the piano, and various handcrafts.",
-    imageSrc: "/assets/team/saule.png",
+    imageSrc: "/assets/team/Saule.png",
     imageAlt: "Saulė Mikaliūnaitė team portrait card",
     imagePosition: "49% 29%"
   },
@@ -72,7 +72,7 @@ export const teamMembers: TeamMember[] = [
     role: "Research Chair",
     meta: "Research Chair · Class of 2027 · East Orange, NJ · Exercise Science",
     bio: "Leudgiana Marcelin Class of 2027 is from East Orange. After working as a teacher at a daycare, she developed a passion for children’s health and well-being, inspiring her journey toward pediatric medicine. She is majoring in Exercise Science on the pre-medical track, with a special interest in stem cell research. Outside of class, she has been involved with Glamour Gals, and Gen’ Next. In her free time, she enjoys trying new activities, working out, and reading.",
-    imageSrc: "/assets/team/leudgiana.png",
+    imageSrc: "/assets/team/Leudgiana.png",
     imageAlt: "Leudgiana Marcelin team portrait card",
     imagePosition: "50% 31%"
   },
@@ -81,25 +81,25 @@ export const teamMembers: TeamMember[] = [
     role: "Secretary",
     meta: "Secretary",
     bio: "Bio forthcoming.",
-    imageSrc: "/assets/team/ikjot.png",
+    imageSrc: "/assets/team/Ikjot.png",
     imageAlt: "Ikjot Puar team portrait card",
     imagePosition: "51% 31%"
   },
   {
     name: "Zabrina Garofalo",
-    role: "Founder",
-    meta: "Founder · Class of 2027 · Middletown, NJ · Biological Sciences",
+    role: "Social Media Chair",
+    meta: "Social Media Chair · Class of 2027 · Middletown, NJ · Biological Sciences",
     bio: "Zabrina (Class of 2027) is from Middletown, New Jersey, and has lived here for the past 7 years. She is pursuing a major in Biological sciences and is on the pre-medical track. Outside of classroom, she volunteers at a non-profit health organization and translates for patients who are unable to speak English. Although she loves science with her whole heart, she values creativity just as much. She loves to draw both digitally and traditionally, bake, play video-games, write, and spend quality time with those closest to her.",
-    imageSrc: "/assets/team/zabrina.png",
+    imageSrc: "/assets/team/Zabrina.png",
     imageAlt: "Zabrina Garofalo team portrait card",
     imagePosition: "49% 30%"
   },
   {
     name: "Zofia Garofalo",
-    role: "Vice President",
-    meta: "Vice President",
+    role: "Social Media Chair",
+    meta: "Social Media Chair",
     bio: "Bio forthcoming.",
-    imageSrc: "/assets/team/zofia.png",
+    imageSrc: "/assets/team/Zofia.png",
     imageAlt: "Zofia Garofalo team portrait card",
     imagePosition: "52% 31%"
   },
@@ -107,7 +107,10 @@ export const teamMembers: TeamMember[] = [
     name: "Sheila Tabanli",
     role: "Faculty Sponsor",
     meta: "Faculty Sponsor · Mathematics · Rutgers University–New Brunswick",
-    bio: "Sheila Tabanli earned her Ph.D. in Computer Science at Missouri University of Science & Technology (Missouri S&T). She is currently an Assistant Teaching Professor of Mathematics at Rutgers University – New Brunswick. Her scholarship focuses on designing student-centered, evidence-based instructional strategies to improve student learning experiences and sense of belonging in math classrooms. She recently developed an instructional framework grounded on research in cognitive science and Social Emotional Learning (SEL). Dr. Tabanli has more than 20 years of experience in the K-20 education domain and has diverse hands-on experiences in designing and implementing inclusive, research-based, engaging learning practices. She is a fellow of Rutgers Chancellor Teaching Fellowship program to develop pedagogical innovations for personalized pathways aimed at improving student learning outcomes. In addition to her academic work, she has been actively supporting Wellness Through Clay as a thoughtful and dedicated faculty sponsor, providing invaluable guidance for our mission to promote creativity, wellness, and community engagement."
+    bio: "Sheila Tabanli earned her Ph.D. in Computer Science at Missouri University of Science & Technology (Missouri S&T). She is currently an Assistant Teaching Professor of Mathematics at Rutgers University – New Brunswick. Her scholarship focuses on designing student-centered, evidence-based instructional strategies to improve student learning experiences and sense of belonging in math classrooms. She recently developed an instructional framework grounded on research in cognitive science and Social Emotional Learning (SEL). Dr. Tabanli has more than 20 years of experience in the K-20 education domain and has diverse hands-on experiences in designing and implementing inclusive, research-based, engaging learning practices. She is a fellow of Rutgers Chancellor Teaching Fellowship program to develop pedagogical innovations for personalized pathways aimed at improving student learning outcomes. In addition to her academic work, she has been actively supporting Wellness Through Clay as a thoughtful and dedicated faculty sponsor, providing invaluable guidance for our mission to promote creativity, wellness, and community engagement.",
+    imageSrc: "/assets/team/tabanli.jpg",
+    imageAlt: "Sheila Tabanli portrait",
+    imagePosition: "50% 25%"
   }
 ];
 
