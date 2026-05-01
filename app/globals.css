@@ -239,20 +239,25 @@ select {
 }
 
 .team-page {
-  max-width: 1760px;
+  max-width: none;
+  padding: 120px 64px 80px;
 }
 
 .team-hero {
-  margin-bottom: 72px;
+  margin-bottom: 120px;
+}
+
+.team-hero h1 {
+  font-size: 44px;
 }
 
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  column-gap: 80px;
-  row-gap: 72px;
-  max-width: 1200px;
-  margin: 0 auto;
+  grid-template-columns: repeat(2, minmax(560px, 1fr));
+  column-gap: 90px;
+  row-gap: 140px;
+  max-width: 1500px;
+  margin: 0;
 }
 
 .team-spotlight,
@@ -263,21 +268,31 @@ select {
 
 .team-spotlight__inner {
   display: grid;
-  grid-template-columns: 300px 1fr;
-  gap: 28px;
+  grid-template-columns: 300px minmax(280px, 420px);
+  gap: 56px;
   align-items: start;
   max-width: none;
 }
 
 .team-portrait {
   width: 300px;
-  height: 360px;
+  height: 430px;
   object-fit: contain;
   display: block;
 }
 
 .team-copy {
   max-width: 420px;
+}
+
+.team-copy p {
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.team-copy h2 {
+  font-size: 22px;
+  line-height: 1.1;
 }
 
 .team-card__name {
