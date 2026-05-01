@@ -63,7 +63,7 @@ export const teamMembers: TeamMember[] = [
     role: "Vice President",
     meta: "Vice President · Class of 2027 · Jefferson, NJ · Genetics + Data Science",
     bio: "Saulė (Class of 2027) is originally from Lithuania but has been living in Jefferson, New Jersey, for the past few years. She is majoring in Genetics with a minor in Data Science while also working as a chess instructor and an ODASIS Supplemental Instructor. Passionate about bringing creativity into everyday life, she strives to inspire others to do the same. Her favorite creative outlets include photography, fashion, writing, playing the piano, and various handcrafts.",
-    imageSrc: "/assets/team/Saule.png",
+    imageSrc: "/assets/team/saule.png",
     imageAlt: "Saulė Mikaliūnaitė team portrait card",
     imagePosition: "49% 29%"
   },
@@ -72,7 +72,7 @@ export const teamMembers: TeamMember[] = [
     role: "Research Chair",
     meta: "Research Chair · Class of 2027 · East Orange, NJ · Exercise Science",
     bio: "Leudgiana Marcelin Class of 2027 is from East Orange. After working as a teacher at a daycare, she developed a passion for children’s health and well-being, inspiring her journey toward pediatric medicine. She is majoring in Exercise Science on the pre-medical track, with a special interest in stem cell research. Outside of class, she has been involved with Glamour Gals, and Gen’ Next. In her free time, she enjoys trying new activities, working out, and reading.",
-    imageSrc: "/assets/team/Leudgiana.png",
+    imageSrc: "/assets/team/leudgiana.png",
     imageAlt: "Leudgiana Marcelin team portrait card",
     imagePosition: "50% 31%"
   },
@@ -81,7 +81,7 @@ export const teamMembers: TeamMember[] = [
     role: "Secretary",
     meta: "Secretary",
     bio: "Bio forthcoming.",
-    imageSrc: "/assets/team/Ikjot.png",
+    imageSrc: "/assets/team/ikjot.png",
     imageAlt: "Ikjot Puar team portrait card",
     imagePosition: "51% 31%"
   },
@@ -90,7 +90,7 @@ export const teamMembers: TeamMember[] = [
     role: "Social Media Chair",
     meta: "Social Media Chair · Class of 2027 · Middletown, NJ · Biological Sciences",
     bio: "Zabrina (Class of 2027) is from Middletown, New Jersey, and has lived here for the past 7 years. She is pursuing a major in Biological sciences and is on the pre-medical track. Outside of classroom, she volunteers at a non-profit health organization and translates for patients who are unable to speak English. Although she loves science with her whole heart, she values creativity just as much. She loves to draw both digitally and traditionally, bake, play video-games, write, and spend quality time with those closest to her.",
-    imageSrc: "/assets/team/Zabrina.png",
+    imageSrc: "/assets/team/zabrina.png",
     imageAlt: "Zabrina Garofalo team portrait card",
     imagePosition: "49% 30%"
   },
@@ -99,7 +99,7 @@ export const teamMembers: TeamMember[] = [
     role: "Social Media Chair",
     meta: "Social Media Chair",
     bio: "Bio forthcoming.",
-    imageSrc: "/assets/team/Zofia.png",
+    imageSrc: "/assets/team/zofia.png",
     imageAlt: "Zofia Garofalo team portrait card",
     imagePosition: "52% 31%"
   },
