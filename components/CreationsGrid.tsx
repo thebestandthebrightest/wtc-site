@@ -37,7 +37,7 @@ export function CreationsGrid() {
             alt={piece.alt}
             width={400}
             height={400}
-            sizes="(max-width: 480px) 100vw, (max-width: 960px) 50vw, 45vw"
+            sizes="(max-width: 640px) 50vw, (max-width: 960px) 33vw, 25vw"
           />
         </figure>
       ))}
