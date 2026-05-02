@@ -738,24 +738,33 @@ select {
 
 .home-doodle {
   transform-style: preserve-3d;
+  transform-origin: center;
   transition:
-    transform 0.65s cubic-bezier(0.22, 1, 0.36, 1),
-    filter 0.65s cubic-bezier(0.22, 1, 0.36, 1);
+    transform 0.85s cubic-bezier(0.16, 1, 0.3, 1),
+    filter 0.85s cubic-bezier(0.16, 1, 0.3, 1);
   will-change: transform, filter;
 }
 
 .home-doodle:hover {
   transform:
-    perspective(900px)
-    rotateX(5deg)
-    rotateY(-6deg)
-    scale(1.1)
-    translateY(-8px);
+    perspective(1000px)
+    translateY(-10px)
+    scale(1.12)
+    rotateX(4deg)
+    rotateY(-5deg);
 
   filter:
-    drop-shadow(0 16px 28px rgba(0, 0, 0, 0.32))
-    brightness(1.04)
-    contrast(1.02);
+    drop-shadow(0 22px 36px rgba(0, 0, 0, 0.34))
+    brightness(1.06)
+    contrast(1.03)
+    saturate(1.04);
 
   animation-play-state: paused;
+}
+
+.home-doodle {
+  transform:
+    perspective(1000px)
+    rotateX(var(--tilt-x, 0deg))
+    rotateY(var(--tilt-y, 0deg));
 }
