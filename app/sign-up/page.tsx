@@ -46,6 +46,13 @@ export default function SignUpPage() {
               New Brunswick, NJ 08901
             </p>
             <p>
+              <strong>Instagram:</strong>
+              <br />
+              <a href="https://instagram.com/RU_Wellness_Clay" target="_blank" rel="noreferrer">
+                @RU_Wellness_Clay
+              </a>
+            </p>
+            <p>
               <strong>Email:</strong>
               <br />
               <a href="mailto:wellnessclay845@gmail.com">wellnessclay845@gmail.com</a>

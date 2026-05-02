@@ -1,24 +1,25 @@
 import Image from "next/image";
+
+import { CreationsGrid } from "../../components/CreationsGrid";
 import { PageShell } from "../../components/PageShell";
-import { creationsGallery } from "../../components/site-data";
+import { creationsDoodles } from "../../components/site-data";
 
 export default function CreationsPage() {
   return (
     <PageShell active="creations">
       <section className="content-page creations-page">
-        <div className="creations-grid" aria-label="Clay creations gallery">
-          {creationsGallery.map((piece) => (
-            <figure className="creations-item" key={piece.key}>
-              <Image
-                src={piece.src}
-                alt={piece.alt}
-                width={400}
-                height={400}
-                sizes="(max-width: 640px) 50vw, (max-width: 960px) 25vw, 220px"
-              />
-            </figure>
-          ))}
-        </div>
+        {creationsDoodles.map((d) => (
+          <Image
+            key={d.src}
+            className="creations-doodle"
+            src={d.src}
+            alt={d.alt}
+            width={d.width}
+            height={d.height}
+            style={d.style}
+          />
+        ))}
+        <CreationsGrid />
       </section>
     </PageShell>
   );

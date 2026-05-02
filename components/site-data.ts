@@ -53,7 +53,7 @@ export const teamMembers: TeamMember[] = [
     name: "Vivian Glenn",
     role: "Founder & President",
     meta: "Founder & President · Class of 2027 · Moorestown, NJ · Public Health",
-    bio: "Vivian Glenn is the Founder and President of Wellness Through Clay, a student-led initiative that creates space for students to unwind, connect, and explore ceramics. After taking ceramics throughout high school, she noticed there wasn’t a place to engage with it recreationally at Rutgers and started WTC to bring that experience to campus. Alongside this, Vivian has been involved in public health research, with experience at Brown University School of Public Health, the Rutgers Center for Alcohol and Substance Use Studies, and the RWJ Women’s Health Institute, focusing on substance use disorder, mental health, and policy. She also works as a Learning Assistant for Physics for the Sciences and previously studied abroad in London at City St George’s, University of London. Outside of school, Vivian enjoys baking desserts, exploring new coffee shops, and loves traveling. She has visited 14 countries in just three months.",
+    bio: "Vivian Glenn is the Founder and President of Wellness Through Clay, a student-led initiative that creates space for students to unwind, connect, and explore ceramics. After taking ceramics throughout high school, she saw there wasn’t a place to engage with it recreationally at Rutgers and started WTC to bring that experience to campus. She is also involved in public health research, with experience at Brown University School of Public Health, the Rutgers Center for Alcohol and Substance Use Studies, and the RWJ Women’s Health Institute, focusing on substance use disorder, mental health, and policy. She works as a Learning Assistant for Physics for the Sciences. Outside of school, she enjoys baking, exploring coffee shops, and traveling.",
     imageSrc: "/assets/team/vivian.png",
     imageAlt: "Vivian Glenn headshot",
     imagePosition: "50% 35%"
@@ -107,7 +107,7 @@ export const teamMembers: TeamMember[] = [
     name: "Sheila Tabanli",
     role: "Faculty Sponsor",
     meta: "Faculty Sponsor · Mathematics · Rutgers University–New Brunswick",
-    bio: "Sheila Tabanli earned her Ph.D. in Computer Science at Missouri University of Science & Technology (Missouri S&T). She is currently an Assistant Teaching Professor of Mathematics at Rutgers University – New Brunswick. Her scholarship focuses on designing student-centered, evidence-based instructional strategies to improve student learning experiences and sense of belonging in math classrooms. She recently developed an instructional framework grounded on research in cognitive science and Social Emotional Learning (SEL). Dr. Tabanli has more than 20 years of experience in the K-20 education domain and has diverse hands-on experiences in designing and implementing inclusive, research-based, engaging learning practices. She is a fellow of Rutgers Chancellor Teaching Fellowship program to develop pedagogical innovations for personalized pathways aimed at improving student learning outcomes. In addition to her academic work, she has been actively supporting Wellness Through Clay as a thoughtful and dedicated faculty sponsor, providing invaluable guidance for our mission to promote creativity, wellness, and community engagement.",
+    bio: "Sheila Tabanli earned her Ph.D. in Computer Science from Missouri University of Science & Technology and is currently an Assistant Teaching Professor of Mathematics at Rutgers University–New Brunswick. Her work focuses on designing student-centered, evidence-based instructional strategies that improve learning experiences and foster a sense of belonging in math classrooms. She developed an instructional framework grounded in cognitive science and Social Emotional Learning (SEL). With over 20 years of experience in K–20 education, she brings deep expertise in inclusive and research-based teaching practices. She is also a Rutgers Chancellor Teaching Fellow, developing pedagogical innovations to support personalized learning pathways. In addition, she supports Wellness Through Clay as a dedicated faculty sponsor, offering guidance to advance its mission of creativity, wellness, and community.",
     imageSrc: "/assets/team/tabanli.jpg",
     imageAlt: "Sheila Tabanli portrait",
     imagePosition: "50% 25%"
@@ -118,75 +118,75 @@ export const homeDoodles: DoodleAsset[] = [
   {
     src: "/assets/creations/clear-bg/owl.png",
     alt: "Clay owl",
-    width: 100,
-    height: 100,
-    style: { top: "7%", left: "4%", opacity: "0.82", transform: "rotate(-5deg)" }
+    width: 105,
+    height: 105,
+    style: { top: "7%", left: "4%", opacity: "0.82", rotate: "-5deg", zIndex: "6", animationDelay: "0s" }
   },
   {
     src: "/assets/creations/clear-bg/mushroom.png",
     alt: "Clay mushroom",
-    width: 90,
-    height: 100,
-    style: { top: "7%", right: "4%", opacity: "0.78", transform: "rotate(6deg)" }
+    width: 88,
+    height: 98,
+    style: { top: "7%", right: "4%", opacity: "0.78", rotate: "6deg", zIndex: "4", animationDelay: "0.7s" }
   },
   {
     src: "/assets/creations/clear-bg/axolotl.png",
     alt: "Clay axolotl",
-    width: 105,
-    height: 95,
-    style: { top: "38%", left: "2%", opacity: "0.8", transform: "rotate(-8deg)" }
+    width: 112,
+    height: 100,
+    style: { top: "38%", left: "2%", opacity: "0.8", rotate: "-8deg", zIndex: "7", animationDelay: "1.3s" }
   },
   {
     src: "/assets/creations/clear-bg/elephant.png",
     alt: "Clay elephant",
-    width: 110,
-    height: 100,
-    style: { top: "35%", right: "2%", opacity: "0.82", transform: "rotate(5deg)" }
+    width: 116,
+    height: 106,
+    style: { top: "35%", right: "2%", opacity: "0.82", rotate: "5deg", zIndex: "5", animationDelay: "0.4s" }
   },
   {
     src: "/assets/creations/clear-bg/duck-bowl.png",
     alt: "Clay duck bowl",
-    width: 95,
+    width: 98,
     height: 90,
-    style: { bottom: "12%", left: "5%", opacity: "0.76", transform: "rotate(4deg)" }
+    style: { bottom: "12%", left: "5%", opacity: "0.76", rotate: "4deg", zIndex: "6", animationDelay: "1.8s" }
   },
   {
     src: "/assets/creations/clear-bg/watermelon.png",
     alt: "Clay watermelon",
-    width: 90,
-    height: 85,
-    style: { bottom: "8%", left: "18%", opacity: "0.74", transform: "rotate(-3deg)" }
+    width: 92,
+    height: 86,
+    style: { bottom: "8%", left: "18%", opacity: "0.74", rotate: "-3deg", zIndex: "4", animationDelay: "0.9s" }
   },
   {
     src: "/assets/creations/clear-bg/flower-dish.png",
     alt: "Clay flower dish",
-    width: 90,
-    height: 90,
-    style: { bottom: "8%", right: "5%", opacity: "0.78", transform: "rotate(-5deg)" }
+    width: 92,
+    height: 92,
+    style: { bottom: "8%", right: "5%", opacity: "0.78", rotate: "-5deg", zIndex: "5", animationDelay: "1.5s" }
   }
 ];
 
 export const creationsDoodles: DoodleAsset[] = [
   {
-    src: "/assets/doodles/record-doodle.png",
-    alt: "Record doodle",
-    width: 50,
-    height: 41,
-    style: { top: "12%", right: "8%", opacity: "0.55", transform: "rotate(6deg)" }
+    src: "/assets/creations/clear-bg/mushroom.png",
+    alt: "Clay mushroom decoration",
+    width: 66,
+    height: 74,
+    style: { top: "4%", right: "2%", opacity: "0.55", rotate: "8deg", zIndex: "2" }
   },
   {
-    src: "/assets/doodles/oleander-doodle-flip.png",
-    alt: "Oleander doodle",
-    width: 42,
-    height: 64,
-    style: { top: "38%", left: "4%", opacity: "0.58", transform: "rotate(-5deg)" }
+    src: "/assets/creations/clear-bg/axolotl.png",
+    alt: "Clay axolotl decoration",
+    width: 74,
+    height: 66,
+    style: { top: "46%", left: "0%", opacity: "0.52", rotate: "-7deg", zIndex: "2" }
   },
   {
-    src: "/assets/doodles/frog-doodle.png",
-    alt: "Frog doodle",
-    width: 46,
-    height: 56,
-    style: { bottom: "9%", right: "7%", opacity: "0.6", transform: "rotate(4deg)" }
+    src: "/assets/creations/clear-bg/cat-pond.png",
+    alt: "Clay cat decoration",
+    width: 62,
+    height: 62,
+    style: { bottom: "6%", right: "1%", opacity: "0.58", rotate: "-4deg", zIndex: "2" }
   }
 ];
 
