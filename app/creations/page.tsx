@@ -6,13 +6,6 @@ export default function CreationsPage() {
   return (
     <PageShell active="creations">
       <section className="content-page creations-page">
-        <div className="creations-hero">
-          <h1 className="creations-title">Creations</h1>
-          <p className="creations-subtext">
-            A gallery of pieces made through Wellness Through Clay sessions.
-          </p>
-        </div>
-
         <div className="creations-grid" aria-label="Clay creations gallery">
           {creationsGallery.map((piece) => (
             <figure className="creations-item" key={piece.key}>
