@@ -3,9 +3,9 @@
 import Image from "next/image";
 import { useEffect, useRef } from "react";
 
-import { creationsGallery } from "./site-data";
+type Piece = { key: string; src: string; alt: string };
 
-export function CreationsGrid() {
+export function CreationsGrid({ pieces }: { pieces: Piece[] }) {
   const gridRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -30,7 +30,7 @@ export function CreationsGrid() {
 
   return (
     <div className="creations-grid" aria-label="Clay creations gallery" ref={gridRef}>
-      {creationsGallery.map((piece) => (
+      {pieces.map((piece) => (
         <figure className="creations-item creation-card reveal" key={piece.key}>
           <Image
             src={piece.src}

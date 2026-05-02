@@ -116,10 +116,10 @@ export const teamMembers: TeamMember[] = [
 
 export const homeDoodles: DoodleAsset[] = [
   {
-    src: "/assets/creations/clear-bg/owl.png",
-    alt: "Clay owl",
-    width: 105,
-    height: 105,
+    src: "/assets/creations/clear-bg/frog-cowboy.png",
+    alt: "Clay frog cowboy",
+    width: 100,
+    height: 100,
     style: { top: "7%", left: "4%", opacity: "0.82", rotate: "-5deg", zIndex: "6", animationDelay: "0s" }
   },
   {
@@ -137,22 +137,22 @@ export const homeDoodles: DoodleAsset[] = [
     style: { top: "38%", left: "2%", opacity: "0.8", rotate: "-8deg", zIndex: "7", animationDelay: "1.3s" }
   },
   {
-    src: "/assets/creations/clear-bg/elephant.png",
-    alt: "Clay elephant",
-    width: 116,
-    height: 106,
+    src: "/assets/creations/clear-bg/manta-ray.png",
+    alt: "Clay manta ray",
+    width: 120,
+    height: 88,
     style: { top: "35%", right: "2%", opacity: "0.82", rotate: "5deg", zIndex: "5", animationDelay: "0.4s" }
   },
   {
-    src: "/assets/creations/clear-bg/duck-bowl.png",
-    alt: "Clay duck bowl",
+    src: "/assets/creations/clear-bg/snail-mushroom.png",
+    alt: "Clay snail and mushroom",
     width: 98,
     height: 90,
     style: { bottom: "12%", left: "5%", opacity: "0.76", rotate: "4deg", zIndex: "6", animationDelay: "1.8s" }
   },
   {
-    src: "/assets/creations/clear-bg/watermelon.png",
-    alt: "Clay watermelon",
+    src: "/assets/creations/clear-bg/lemon-dish.png",
+    alt: "Clay lemon dish",
     width: 92,
     height: 86,
     style: { bottom: "8%", left: "18%", opacity: "0.74", rotate: "-3deg", zIndex: "4", animationDelay: "0.9s" }
@@ -163,99 +163,6 @@ export const homeDoodles: DoodleAsset[] = [
     width: 92,
     height: 92,
     style: { bottom: "8%", right: "5%", opacity: "0.78", rotate: "-5deg", zIndex: "5", animationDelay: "1.5s" }
-  }
-];
-
-export const creationsDoodles: DoodleAsset[] = [
-  {
-    src: "/assets/creations/clear-bg/mushroom.png",
-    alt: "Clay mushroom decoration",
-    width: 66,
-    height: 74,
-    style: { top: "4%", right: "2%", opacity: "0.55", rotate: "8deg", zIndex: "2" }
-  },
-  {
-    src: "/assets/creations/clear-bg/axolotl.png",
-    alt: "Clay axolotl decoration",
-    width: 74,
-    height: 66,
-    style: { top: "46%", left: "0%", opacity: "0.52", rotate: "-7deg", zIndex: "2" }
-  },
-  {
-    src: "/assets/creations/clear-bg/cat-pond.png",
-    alt: "Clay cat decoration",
-    width: 62,
-    height: 62,
-    style: { bottom: "6%", right: "1%", opacity: "0.58", rotate: "-4deg", zIndex: "2" }
-  }
-];
-
-export const creationsGallery: Array<
-  {
-    key: string;
-    src: string;
-    alt: string;
-  }
-> = [
-  {
-    key: "watermelon",
-    src: "/assets/creations/clear-bg/watermelon.png",
-    alt: "Watermelon clay dish"
-  },
-  {
-    key: "mini-landscape",
-    src: "/assets/creations/clear-bg/mini-landscape.png",
-    alt: "Mini clay landscape dish"
-  },
-  {
-    key: "waffle",
-    src: "/assets/creations/clear-bg/waffle.png",
-    alt: "Clay waffle dish"
-  },
-  {
-    key: "duck-bowl",
-    src: "/assets/creations/clear-bg/duck-bowl.png",
-    alt: "Clay duck pond bowl"
-  },
-  {
-    key: "blue-creature",
-    src: "/assets/creations/clear-bg/blue-creature.png",
-    alt: "Blue clay creature"
-  },
-  {
-    key: "cat-pond",
-    src: "/assets/creations/clear-bg/cat-pond.png",
-    alt: "Clay cat floating by a pond"
-  },
-  {
-    key: "owl",
-    src: "/assets/creations/clear-bg/owl.png",
-    alt: "Clay owl with leaves"
-  },
-  {
-    key: "manta-ray",
-    src: "/assets/creations/clear-bg/manta-ray.png",
-    alt: "Clay manta ray"
-  },
-  {
-    key: "elephant",
-    src: "/assets/creations/clear-bg/elephant.png",
-    alt: "Clay elephant"
-  },
-  {
-    key: "axolotl",
-    src: "/assets/creations/clear-bg/axolotl.png",
-    alt: "Clay axolotl"
-  },
-  {
-    key: "mushroom",
-    src: "/assets/creations/clear-bg/mushroom.png",
-    alt: "Clay mushroom candle holder"
-  },
-  {
-    key: "flower-dish",
-    src: "/assets/creations/clear-bg/flower-dish.png",
-    alt: "Clay flower dish"
   }
 ];
 
