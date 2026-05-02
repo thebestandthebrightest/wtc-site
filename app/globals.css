@@ -768,3 +768,49 @@ select {
     rotateX(var(--tilt-x, 0deg))
     rotateY(var(--tilt-y, 0deg));
 }
+
+/* ===== CREATIONS CLAY-LIKE HOVER ===== */
+
+.creation-card {
+  transform:
+    translate(var(--magnet-x, 0px), var(--magnet-y, 0px));
+}
+
+.creation-card:hover {
+  transform:
+    translate(var(--magnet-x, 0px), var(--magnet-y, 0px))
+    perspective(1000px)
+    rotateX(4deg)
+    rotateY(-4deg)
+    scale(1.06);
+
+  filter:
+    drop-shadow(0 20px 35px rgba(0, 0, 0, 0.26))
+    brightness(1.06)
+    saturate(1.04);
+}
+
+.creation-card:hover img {
+  animation: clay-breathe 2.0s ease-in-out infinite;
+}
+
+@keyframes clay-breathe {
+  0%, 100% {
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    transform: scale(1.012, 0.99) rotate(0.35deg);
+  }
+}
+
+.creation-card:nth-child(2n) img {
+  animation-delay: 0.1s;
+}
+
+.creation-card:nth-child(3n) img {
+  animation-delay: 0.2s;
+}
+
+.creation-card:nth-child(4n) img {
+  animation-delay: 0.3s;
+}
