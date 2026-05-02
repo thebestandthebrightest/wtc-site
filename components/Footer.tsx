@@ -3,7 +3,7 @@ export function Footer() {
     <footer className="site-footer">
       <a
         className="site-footer__link"
-        href="https://www.instagram.com/"
+        href="https://www.instagram.com/ru_wellness_clay/"
         target="_blank"
         rel="noreferrer"
       >
@@ -21,7 +21,7 @@ export function Footer() {
         </svg>
         <span>Instagram</span>
       </a>
-      <a className="site-footer__underline" href="mailto:wellnessclay845@gmail.com">
+      <a className="site-footer__plain" href="mailto:wellnessclay845@gmail.com">
         Email
       </a>
     </footer>

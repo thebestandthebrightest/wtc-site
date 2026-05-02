@@ -6,7 +6,6 @@ export default function SignUpPage() {
   return (
     <PageShell active="sign-up">
       <section className="content-page signup-page">
-        <h1 className="signup-page__title">Sign Up Form</h1>
         <div className="signup-layout">
           <div>
             <Image
@@ -19,7 +18,17 @@ export default function SignUpPage() {
             />
           </div>
           <div className="signup-aside">
-            <p>First-come, first-served</p>
+            <p>
+              The sign up form will be released in Fall 2026. Follow our{" "}
+              <a
+                href="https://www.instagram.com/ru_wellness_clay/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Instagram
+              </a>{" "}
+              for updates.
+            </p>
             <p>
               <strong>Hours:</strong>
               <br />

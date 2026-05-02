@@ -102,7 +102,7 @@ select {
   top: 30px;
   left: 50%;
   z-index: 30;
-  width: clamp(44px, 4vw, 58px);
+  width: clamp(72px, 6vw, 96px);
   transform: translateX(-50%);
 }
 
@@ -135,6 +135,10 @@ select {
 .site-footer__underline {
   text-decoration: underline;
   text-underline-offset: 5px;
+}
+
+.site-footer__plain {
+  text-decoration: none;
 }
 
 .icon-instagram {
