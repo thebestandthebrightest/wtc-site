@@ -16,7 +16,7 @@ export default function TeamPage() {
               className="team-spotlight"
               key={member.name}
             >
-              <div className="team-spotlight__inner">
+              <div className="team-spotlight_inner">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={member.imageSrc ?? ""}

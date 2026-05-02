@@ -279,10 +279,8 @@ select {
   gap: 48px;
 }
 
-.team-spotlight,
-.team-spotlight--reversed {
-  display: block;
-  margin-bottom: 0;
+.team-spotlight:nth-child(even) .team-spotlight_inner {
+  grid-template-columns: minmax(0, 420px) 300px;
 }
 
 .team-portrait {
