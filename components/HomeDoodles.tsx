@@ -9,11 +9,11 @@ export function HomeDoodles() {
     const doodles = document.querySelectorAll<HTMLElement>(".home-doodle");
 
     const handleMove = (e: MouseEvent) => {
-      const x = (e.clientX / window.innerWidth - 0.5) * 10;
-      const y = (e.clientY / window.innerHeight - 0.5) * 10;
+      const x = (e.clientX / window.innerWidth - 0.5) * 8;
+      const y = (e.clientY / window.innerHeight - 0.5) * 8;
 
       doodles.forEach((el, index) => {
-        const depth = 1 + index * 0.08;
+        const depth = 1 + index * 0.05;
         el.style.setProperty("--tilt-x", `${-y * depth}deg`);
         el.style.setProperty("--tilt-y", `${x * depth}deg`);
       });
