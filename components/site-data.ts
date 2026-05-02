@@ -118,51 +118,37 @@ export const homeDoodles: DoodleAsset[] = [
   {
     src: "/assets/creations/clear-bg/frog-cowboy.png",
     alt: "Clay frog cowboy",
-    width: 100,
-    height: 100,
-    style: { top: "7%", left: "4%", opacity: "0.82", rotate: "-5deg", zIndex: "6", animationDelay: "0s" }
+    width: 135,
+    height: 135,
+    style: { top: "8%", left: "7%", opacity: "0.9", rotate: "-5deg", zIndex: "6", animationDelay: "0s" }
   },
   {
     src: "/assets/creations/clear-bg/mushroom.png",
     alt: "Clay mushroom",
-    width: 88,
-    height: 98,
-    style: { top: "7%", right: "4%", opacity: "0.78", rotate: "6deg", zIndex: "4", animationDelay: "0.7s" }
+    width: 120,
+    height: 130,
+    style: { top: "9%", right: "8%", opacity: "0.88", rotate: "6deg", zIndex: "4", animationDelay: "0.7s" }
   },
   {
     src: "/assets/creations/clear-bg/axolotl.png",
     alt: "Clay axolotl",
-    width: 112,
-    height: 100,
-    style: { top: "38%", left: "2%", opacity: "0.8", rotate: "-8deg", zIndex: "7", animationDelay: "1.3s" }
+    width: 145,
+    height: 130,
+    style: { top: "40%", left: "5%", opacity: "0.9", rotate: "-8deg", zIndex: "7", animationDelay: "1.3s" }
   },
   {
     src: "/assets/creations/clear-bg/manta-ray.png",
     alt: "Clay manta ray",
-    width: 120,
-    height: 88,
-    style: { top: "35%", right: "2%", opacity: "0.82", rotate: "5deg", zIndex: "5", animationDelay: "0.4s" }
-  },
-  {
-    src: "/assets/creations/clear-bg/snail-mushroom.png",
-    alt: "Clay snail and mushroom",
-    width: 98,
-    height: 90,
-    style: { bottom: "12%", left: "5%", opacity: "0.76", rotate: "4deg", zIndex: "6", animationDelay: "1.8s" }
+    width: 155,
+    height: 115,
+    style: { top: "38%", right: "6%", opacity: "0.9", rotate: "5deg", zIndex: "5", animationDelay: "0.4s" }
   },
   {
     src: "/assets/creations/clear-bg/lemon-dish.png",
     alt: "Clay lemon dish",
-    width: 92,
-    height: 86,
-    style: { bottom: "8%", left: "18%", opacity: "0.74", rotate: "-3deg", zIndex: "4", animationDelay: "0.9s" }
-  },
-  {
-    src: "/assets/creations/clear-bg/flower-dish.png",
-    alt: "Clay flower dish",
-    width: 92,
-    height: 92,
-    style: { bottom: "8%", right: "5%", opacity: "0.78", rotate: "-5deg", zIndex: "5", animationDelay: "1.5s" }
+    width: 120,
+    height: 112,
+    style: { bottom: "12%", left: "20%", opacity: "0.85", rotate: "-3deg", zIndex: "4", animationDelay: "0.9s" }
   }
 ];
 
