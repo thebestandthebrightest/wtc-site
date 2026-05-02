@@ -116,53 +116,53 @@ export const teamMembers: TeamMember[] = [
 
 export const homeDoodles: DoodleAsset[] = [
   {
-    src: "/assets/doodles/oleander-doodle.png",
-    alt: "Oleander doodle",
-    width: 60,
-    height: 88,
-    style: { top: "12%", left: "5%", opacity: "0.75", transform: "rotate(-6deg)" }
+    src: "/assets/creations/clear-bg/owl.png",
+    alt: "Clay owl",
+    width: 100,
+    height: 100,
+    style: { top: "7%", left: "4%", opacity: "0.82", transform: "rotate(-5deg)" }
   },
   {
-    src: "/assets/doodles/lily-doodle.png",
-    alt: "Lily doodle",
-    width: 70,
-    height: 116,
-    style: { top: "11%", right: "7%", opacity: "0.68", transform: "rotate(7deg)" }
+    src: "/assets/creations/clear-bg/mushroom.png",
+    alt: "Clay mushroom",
+    width: 90,
+    height: 100,
+    style: { top: "7%", right: "4%", opacity: "0.78", transform: "rotate(6deg)" }
   },
   {
-    src: "/assets/doodles/flying-butterfly-doodle.png",
-    alt: "Flying butterfly doodle",
-    width: 78,
-    height: 80,
-    style: { top: "34%", left: "4%", opacity: "0.8", transform: "rotate(-8deg)" }
+    src: "/assets/creations/clear-bg/axolotl.png",
+    alt: "Clay axolotl",
+    width: 105,
+    height: 95,
+    style: { top: "38%", left: "2%", opacity: "0.8", transform: "rotate(-8deg)" }
   },
   {
-    src: "/assets/doodles/bee-doodle.png",
-    alt: "Bee doodle",
-    width: 52,
-    height: 45,
-    style: { top: "16%", left: "48%", opacity: "0.72", transform: "rotate(4deg)" }
+    src: "/assets/creations/clear-bg/elephant.png",
+    alt: "Clay elephant",
+    width: 110,
+    height: 100,
+    style: { top: "35%", right: "2%", opacity: "0.82", transform: "rotate(5deg)" }
   },
   {
-    src: "/assets/doodles/open-butterfly-doodle.png",
-    alt: "Open butterfly doodle",
-    width: 74,
-    height: 60,
-    style: { bottom: "17%", left: "18%", opacity: "0.74", transform: "rotate(3deg)" }
+    src: "/assets/creations/clear-bg/duck-bowl.png",
+    alt: "Clay duck bowl",
+    width: 95,
+    height: 90,
+    style: { bottom: "12%", left: "5%", opacity: "0.76", transform: "rotate(4deg)" }
   },
   {
-    src: "/assets/doodles/brown-butterfly-doodle.png",
-    alt: "Brown butterfly doodle",
-    width: 78,
-    height: 49,
-    style: { bottom: "13%", right: "16%", opacity: "0.79", transform: "rotate(-4deg)" }
-  },
-  {
-    src: "/assets/doodles/orchid-doodle.png",
-    alt: "Orchid doodle",
-    width: 56,
+    src: "/assets/creations/clear-bg/watermelon.png",
+    alt: "Clay watermelon",
+    width: 90,
     height: 85,
-    style: { bottom: "8%", right: "5%", opacity: "0.7", transform: "rotate(5deg)" }
+    style: { bottom: "8%", left: "18%", opacity: "0.74", transform: "rotate(-3deg)" }
+  },
+  {
+    src: "/assets/creations/clear-bg/flower-dish.png",
+    alt: "Clay flower dish",
+    width: 90,
+    height: 90,
+    style: { bottom: "8%", right: "5%", opacity: "0.78", transform: "rotate(-5deg)" }
   }
 ];
 

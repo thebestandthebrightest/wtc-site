@@ -110,16 +110,19 @@ select {
 
 .site-logo {
   position: absolute;
-  top: 30px;
+  top: 28px;
   left: 50%;
   z-index: 30;
-  width: clamp(94px, 7.8vw, 125px);
   transform: translateX(-50%);
+  white-space: nowrap;
 }
 
-.site-logo img {
-  width: 100%;
-  height: auto;
+.site-logo__text {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(14px, 1.4vw, 20px);
+  font-weight: 500;
+  color: var(--wtc-text-soft);
+  letter-spacing: 0.03em;
 }
 
 .site-footer {
@@ -229,7 +232,7 @@ select {
   font-family: "Cormorant Garamond", "Iowan Old Style", "Book Antiqua", "Palatino Linotype", Georgia, serif;
   font-size: clamp(20px, 1.55vw, 22px);
   line-height: 1.58;
-  color: var(--wtc-text-soft);
+  color: var(--wtc-white);
 }
 
 .about-copy p {
@@ -489,8 +492,7 @@ select {
   }
 
   .site-logo {
-    top: 28px;
-    width: 65px;
+    top: 26px;
   }
 
   .site-footer {
@@ -572,8 +574,11 @@ select {
   }
 
   .site-logo {
-    top: 24px;
-    width: 57px;
+    top: 22px;
+  }
+
+  .site-logo__text {
+    font-size: 13px;
   }
 
   .home-hero__title,
