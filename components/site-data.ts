@@ -118,37 +118,51 @@ export const homeDoodles: DoodleAsset[] = [
   {
     src: "/assets/creations/clear-bg/frog-cowboy.png",
     alt: "Clay frog cowboy",
-    width: 135,
-    height: 135,
-    style: { top: "8%", left: "7%", opacity: "0.9", rotate: "-5deg", zIndex: "6", animationDelay: "0s" }
-  },
-  {
-    src: "/assets/creations/clear-bg/mushroom.png",
-    alt: "Clay mushroom",
-    width: 120,
-    height: 130,
-    style: { top: "9%", right: "8%", opacity: "0.88", rotate: "6deg", zIndex: "4", animationDelay: "0.7s" }
+    width: 140,
+    height: 140,
+    style: { top: "10%", left: "7%", opacity: "0.9", rotate: "-6deg", zIndex: "6", animationDelay: "0s" }
   },
   {
     src: "/assets/creations/clear-bg/axolotl.png",
     alt: "Clay axolotl",
-    width: 145,
-    height: 130,
-    style: { top: "40%", left: "5%", opacity: "0.9", rotate: "-8deg", zIndex: "7", animationDelay: "1.3s" }
+    width: 150,
+    height: 135,
+    style: { top: "42%", left: "6%", opacity: "0.92", rotate: "-8deg", zIndex: "7", animationDelay: "1.2s" }
   },
   {
     src: "/assets/creations/clear-bg/manta-ray.png",
     alt: "Clay manta ray",
-    width: 155,
-    height: 115,
-    style: { top: "38%", right: "6%", opacity: "0.9", rotate: "5deg", zIndex: "5", animationDelay: "0.4s" }
+    width: 160,
+    height: 120,
+    style: { top: "40%", right: "6%", opacity: "0.9", rotate: "5deg", zIndex: "5", animationDelay: "0.5s" }
   },
   {
     src: "/assets/creations/clear-bg/lemon-dish.png",
     alt: "Clay lemon dish",
     width: 120,
-    height: 112,
-    style: { bottom: "12%", left: "20%", opacity: "0.85", rotate: "-3deg", zIndex: "4", animationDelay: "0.9s" }
+    height: 110,
+    style: { bottom: "14%", left: "22%", opacity: "0.85", rotate: "-3deg", zIndex: "4", animationDelay: "0.9s" }
+  },
+  {
+    src: "/assets/creations/clear-bg/snake.png",
+    alt: "Clay snake",
+    width: 135,
+    height: 115,
+    style: { bottom: "12%", right: "20%", opacity: "0.88", rotate: "4deg", zIndex: "5", animationDelay: "1.4s" }
+  },
+  {
+    src: "/assets/creations/clear-bg/sun-tile.png",
+    alt: "Clay sun tile",
+    width: 120,
+    height: 120,
+    style: { top: "15%", right: "12%", opacity: "0.85", rotate: "6deg", zIndex: "4", animationDelay: "0.7s" }
+  },
+  {
+    src: "/assets/creations/clear-bg/torso-sculpture.png",
+    alt: "Clay torso sculpture",
+    width: 150,
+    height: 170,
+    style: { bottom: "10%", right: "8%", opacity: "0.9", rotate: "-4deg", zIndex: "6", animationDelay: "1.6s" }
   }
 ];
 
