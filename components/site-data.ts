@@ -53,7 +53,7 @@ export const teamMembers: TeamMember[] = [
     name: "Vivian Glenn",
     role: "Founder & President",
     meta: "Founder & President · Class of 2027 · Moorestown, NJ · Public Health",
-    bio: "Vivian Glenn is the Founder and President of Wellness Through Clay, a student-led initiative that creates space for students to unwind, connect, and explore ceramics. After taking ceramics throughout high school, she saw there wasn’t a place to engage with it recreationally at Rutgers and started WTC to bring that experience to campus. She is also involved in public health research, with experience at Brown University School of Public Health, the Rutgers Center for Alcohol and Substance Use Studies, and the RWJ Women’s Health Institute, focusing on substance use disorder, mental health, and policy. She works as a Learning Assistant for Physics for the Sciences. Outside of school, she enjoys baking, exploring coffee shops, and traveling.",
+    bio: "Vivian Glenn is the Founder and President of Wellness Through Clay, a student-led initiative that creates space for students to unwind, connect, and explore ceramics. After taking ceramics throughout high school, she saw there wasn’t a place to engage with it recreationally at Rutgers and started WTC to bring that experience to campus. She is also involved in public health research, with experience at Brown University School of Public Health, the Rutgers Center for Alcohol and Substance Use Studies, and the RWJ Women’s Health Institute, focusing on substance use disorder, mental health, and policy. She works as a Learning Assistant for Physics for the Sciences. Outside of school, she enjoys baking, exploring coffee shops, and traveling. Fun fact: Vivian has traveled to 14 countries in 3 months!",
     imageSrc: "/assets/team/vivian.png",
     imageAlt: "Vivian Glenn headshot",
     imagePosition: "50% 35%"
@@ -61,8 +61,8 @@ export const teamMembers: TeamMember[] = [
   {
     name: "Saulė Mikaliūnaitė",
     role: "Vice President",
-    meta: "Vice President · Class of 2027 · Jefferson, NJ · Genetics + Data Science",
-    bio: "Saulė (Class of 2027) is originally from Lithuania but has been living in Jefferson, New Jersey, for the past few years. She is majoring in Genetics with a minor in Data Science while also working as a chess instructor and an ODASIS Supplemental Instructor. Passionate about bringing creativity into everyday life, she strives to inspire others to do the same. Her favorite creative outlets include photography, fashion, writing, playing the piano, and various handcrafts.",
+    meta: "Vice President · Class of 2027 · Vilnius, Lithuania · Genetics + Data Science",
+    bio: "Having moved to the United States at 13, Saule has learned the importance of balancing consistent hard work with creative and physical outlets. She enjoys different forms of exercise like biking, rock climbing, skiing, hiking, swimming, and weightlifting. She also loves expressing her creativity through pottery, photography, and writing. With WTC, she is excited to help other high-achieving students create that balance and provide them with a space to socialize, relax, and engage through the tactile process of creating with clay! Alongside her rigorous coursework, Saule serves as an assistant researcher at Dr. Lei Yu’s lab, as well as a learning assistant for physics and a chess instructor for middle school students. She recently attended the American Association for Cancer Research Annual Meeting (in San Diego), where she presented her research poster. Fun fact: Saule has a twin sister who is a professional ballerina!",
     imageSrc: "/assets/team/saule.png",
     imageAlt: "Saulė Mikaliūnaitė team portrait card",
     imagePosition: "49% 29%"
