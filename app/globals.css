@@ -738,22 +738,24 @@ select {
 
 .home-doodle {
   transform-style: preserve-3d;
-  transition: transform 0.35s ease, filter 0.35s ease;
+  transition:
+    transform 0.65s cubic-bezier(0.22, 1, 0.36, 1),
+    filter 0.65s cubic-bezier(0.22, 1, 0.36, 1);
   will-change: transform, filter;
 }
 
 .home-doodle:hover {
   transform:
     perspective(900px)
-    rotateX(6deg)
-    rotateY(-7deg)
-    scale(1.14)
-    translateY(-12px);
+    rotateX(5deg)
+    rotateY(-6deg)
+    scale(1.1)
+    translateY(-8px);
 
   filter:
-    drop-shadow(0 18px 32px rgba(0, 0, 0, 0.36))
-    brightness(1.06)
-    contrast(1.03);
+    drop-shadow(0 16px 28px rgba(0, 0, 0, 0.32))
+    brightness(1.04)
+    contrast(1.02);
 
   animation-play-state: paused;
 }

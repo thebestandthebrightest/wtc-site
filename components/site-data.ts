@@ -134,8 +134,7 @@ export const homeDoodles: DoodleAsset[] = [
     alt: "Clay manta ray",
     width: 160,
     height: 120,
-    style: { top: "40%", right: "6%", opacity: "0.9", rotate: "5deg", zIndex: "5", animationDelay: "0.5s" }
-  },
+    style: { top: "39%", right: "3%", opacity: "0.9", rotate: "5deg", zIndex: "5", animationDelay: "0.5s" }
   {
     src: "/assets/creations/clear-bg/lemon-dish.png",
     alt: "Clay lemon dish",
@@ -148,14 +147,14 @@ export const homeDoodles: DoodleAsset[] = [
     alt: "Clay snake",
     width: 135,
     height: 115,
-    style: { bottom: "12%", right: "20%", opacity: "0.88", rotate: "4deg", zIndex: "5", animationDelay: "1.4s" }
+    style: { bottom: "12%", right: "24%", opacity: "0.88", rotate: "4deg", zIndex: "5", animationDelay: "1.4s" }
   },
   {
     src: "/assets/creations/clear-bg/sun-tile.png",
     alt: "Clay sun tile",
     width: 120,
     height: 120,
-    style: { top: "15%", right: "12%", opacity: "0.85", rotate: "6deg", zIndex: "4", animationDelay: "0.7s" }
+    style: { top: "10%", right: "7%", opacity: "0.85", rotate: "6deg", zIndex: "4", animationDelay: "0.7s" }
   },
   {
     src: "/assets/creations/clear-bg/torso-sculpture.png",
