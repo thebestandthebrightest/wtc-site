@@ -834,3 +834,48 @@ select {
     font-size: 17px;
   }
 }
+
+/* ===== FINAL TEAM PAGE DESKTOP FIX ===== */
+@media (min-width: 961px) {
+  .team-grid {
+    max-width: none;
+    padding: 0 4vw;
+    column-gap: 6vw;
+    row-gap: 150px;
+  }
+
+  .team-spotlight__inner {
+    display: grid;
+    grid-template-columns: 500px 340px;
+    column-gap: 70px;
+    align-items: start;
+  }
+
+  .team-portrait {
+    width: 500px !important;
+    max-width: 500px !important;
+    height: auto;
+    margin-top: 0;
+  }
+
+  .team-copy {
+    max-width: 340px;
+  }
+
+  .team-card__name {
+    font-size: 18px;
+    line-height: 1.1;
+    margin-bottom: 18px;
+  }
+
+  .team-card__meta {
+    font-size: 17px;
+    line-height: 1.45;
+    margin-bottom: 22px;
+  }
+
+  .team-card__bio {
+    font-size: 13.5px;
+    line-height: 1.55;
+  }
+}
