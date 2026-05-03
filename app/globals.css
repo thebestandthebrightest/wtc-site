@@ -972,3 +972,30 @@ select {
     drop-shadow(0 20px 36px rgba(0, 0, 0, 0.28))
     brightness(1.05);
 }
+
+/* ===== TEAM SPOTLIGHT INTERACTION ===== */
+
+.team-grid {
+  transition: opacity 0.4s ease;
+}
+
+.team-spotlight {
+  transition:
+    opacity 0.5s ease,
+    transform 0.5s ease,
+    filter 0.5s ease;
+}
+
+/* when hovering the grid, dim ALL */
+.team-grid:hover .team-spotlight {
+  opacity: 0.45;
+  filter: grayscale(10%) brightness(0.9);
+}
+
+/* bring hovered one back */
+.team-grid .team-spotlight:hover {
+  opacity: 1;
+  filter: none;
+  transform: translateY(-4px);
+  z-index: 2;
+}
