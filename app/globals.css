@@ -441,7 +441,7 @@ select {
 
 .signup-aside {
   font-family: "Libre Caslon Text", serif;
-  font-size: clamp(20px, 1.55vw, 22px);
+  font-size: clamp(16px, 1.55vw, 22px);
   line-height: 1.58;
   color: var(--wtc-white);
 }
