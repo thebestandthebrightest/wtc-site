@@ -902,11 +902,31 @@ select {
 }
 
 .team-portrait:hover {
-  transform:
-    translateY(-8px)
-    scale(1.035);
+  transform: translateY(-6px) scale(1.03);
+  filter: drop-shadow(0 16px 30px rgba(0, 0, 0, 0.22));
+}
 
-  filter:
-    drop-shadow(0 18px 32px rgba(0, 0, 0, 0.22))
-    brightness(1.025);
+.team-portrait:hover::after {
+  opacity: 1;
+}
+
+.team-portrait {
+  position: relative;
+  transition:
+    transform 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+    filter 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.team-portrait::after {
+  content: "";
+  position: absolute;
+  inset: -20%;
+  background: radial-gradient(
+    circle at 50% 40%,
+    rgba(255, 248, 244, 0.18),
+    transparent 65%
+  );
+  opacity: 0;
+  transition: opacity 0.7s ease;
+  pointer-events: none;
 }
