@@ -41,7 +41,7 @@ body {
 h1, h2, h3 {
   font-family: "Libre Caslon Text", serif;
   font-weight: 400;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.02em;
 }
 
 h1,
@@ -50,7 +50,7 @@ h1,
 .creations-title {
   font-family: "Libre Caslon Display", serif;
   font-weight: 400;
-  font-size: 56px;
+  font-size: 64px;
   line-height: 1.05;
 }
 
@@ -297,10 +297,10 @@ select {
 }
 
 .team-card__name {
-  margin: 0 0 16px;
+  margin: 0 0 10px;
   font-family: "Libre Caslon Display", serif;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 22px;
   line-height: 1.05;
   letter-spacing: -0.01em;
 }
@@ -308,8 +308,8 @@ select {
 .team-card__meta,
 .team-card__bio {
   font-family: "Libre Caslon Text", serif;
-  font-size: 15px;
-  line-height: 1.6;
+  font-size: 16.5px;
+  line-height: 1.7;
 }
 
 .team-card__bio--muted {
