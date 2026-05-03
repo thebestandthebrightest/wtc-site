@@ -879,3 +879,66 @@ select {
     line-height: 1.55;
   }
 }
+
+/* ===== FINAL TEAM PAGE MATCH TO GOAL SITE ===== */
+@media (min-width: 961px) {
+  .team-page {
+    padding: 120px 4vw 96px;
+  }
+
+  .team-page .page-heading {
+    max-width: none;
+    margin: 0 0 120px;
+    padding: 0;
+  }
+
+  .team-grid {
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: clamp(70px, 7vw, 130px);
+    row-gap: 140px;
+  }
+
+  .team-spotlight__inner {
+    display: grid;
+    grid-template-columns: 360px 310px;
+    column-gap: 48px;
+    align-items: end;
+  }
+
+  .team-portrait {
+    width: 360px !important;
+    max-width: 360px !important;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .team-copy {
+    max-width: 310px;
+    background: transparent;
+  }
+
+  .team-card__name {
+    font-size: 18px;
+    line-height: 1.1;
+    margin: 0 0 18px;
+    color: var(--wtc-text-soft) !important;
+  }
+
+  .team-card__meta {
+    font-size: 17px;
+    line-height: 1.45;
+    margin: 0 0 22px;
+    color: #fff3ee !important;
+  }
+
+  .team-card__bio {
+    font-size: 13px;
+    line-height: 1.55;
+    margin: 0;
+    color: #fff3ee !important;
+  }
+}
