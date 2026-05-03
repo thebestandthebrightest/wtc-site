@@ -844,20 +844,20 @@ select {
   }
 
   .team-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    column-gap: clamp(70px, 8vw, 140px);
-    row-gap: 150px;
-    max-width: 1500px;
-    margin: 0 auto;
-    padding: 0;
-  }
+  display: grid;
+  grid-template-columns: repeat(2, 680px); /* match the width above */
+  justify-content: center;                /* 🔥 centers both as a pair */
+  column-gap: 120px;                      /* space between you & Saule */
+  row-gap: 150px;
+}
 
   .team-spotlight__inner {
     display: grid;
-    grid-template-columns: 330px 340px;
-    column-gap: 54px;
+    grid-template-columns: 320px 360px;
+    column-gap: 56px;
     align-items: center;
+
+    width: 680px;
   }
 
   .team-portrait {
@@ -869,8 +869,7 @@ select {
   }
 
   .team-copy {
-    width: 340px;
-    max-width: 340px;
+    width: 100%;
   }
 
   .team-card__name {
