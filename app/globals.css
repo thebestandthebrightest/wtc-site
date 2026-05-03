@@ -837,110 +837,45 @@ select {
   }
 }
 
-/* ===== FINAL TEAM PAGE DESKTOP FIX ===== */
+/* ===== FINAL TEAM POLISH ===== */
 @media (min-width: 961px) {
+
   .team-grid {
-    max-width: none;
-    padding: 0 4vw;
-    column-gap: 6vw;
-    row-gap: 150px;
+    max-width: 1200px;
+    margin: 0 auto;
+    column-gap: 120px;
+    row-gap: 180px;
   }
 
   .team-spotlight__inner {
-    display: grid;
-    grid-template-columns: 500px 340px;
-    column-gap: 70px;
+    grid-template-columns: 280px 300px;
+    column-gap: 48px;
     align-items: start;
   }
 
   .team-portrait {
-    width: 500px !important;
-    max-width: 500px !important;
-    height: auto;
-    margin-top: 0;
+    width: 280px !important;
+    max-width: 280px !important;
   }
 
   .team-copy {
-    max-width: 340px;
-  }
-
-  .team-card__name {
-    font-size: 18px;
-    line-height: 1.1;
-    margin-bottom: 18px;
-  }
-
-  .team-card__meta {
-    font-size: 17px;
-    line-height: 1.45;
-    margin-bottom: 22px;
-  }
-
-  .team-card__bio {
-    font-size: 13.5px;
-    line-height: 1.55;
-  }
-}
-
-/* ===== FINAL TEAM PAGE MATCH TO GOAL SITE ===== */
-@media (min-width: 961px) {
-  .team-page {
-    padding: 120px 4vw 96px;
-  }
-
-  .team-page .page-heading {
-    max-width: none;
-    margin: 0 0 120px;
-    padding: 0;
-  }
-
-  .team-grid {
-    max-width: 1420px;
-    margin: 0 auto;
-    padding: 0;
-    display: grid;
-    grid-template-columns: repeat(2, minmax(560px, 1fr));
-    column-gap: clamp(72px, 8vw, 140px);
-    row-gap: 150px;
-  }
-
-  .team-spotlight__inner {
-    display: grid;
-    grid-template-columns: 300px 300px;
-    column-gap: 42px;
-    align-items: end;
-  }
-
-  .team-portrait {
-    width: 300px !important;
-    max-width: 300px !important;
-    height: auto;
-    object-fit: contain;
-  }
-
-  .team-copy {
-    width: 300px;
     max-width: 300px;
   }
 
   .team-card__name {
-    font-size: 17px;
-    line-height: 1.1;
-    margin: 0 0 18px;
-    color: var(--wtc-text-soft) !important;
+    font-size: 16px;
+    margin-bottom: 12px;
+    opacity: 0.8;
   }
 
   .team-card__meta {
     font-size: 18px;
     line-height: 1.35;
-    margin: 0 0 22px;
-    color: #fff3ee !important;
+    margin-bottom: 26px;
   }
 
   .team-card__bio {
     font-size: 13px;
-    line-height: 1.5;
-    margin: 0;
-    color: #fff3ee !important;
+    line-height: 1.65;
   }
 }
