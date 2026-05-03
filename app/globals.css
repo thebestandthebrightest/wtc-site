@@ -432,25 +432,27 @@ select {
 
 .signup-layout {
   display: grid;
-  grid-template-columns: 1fr 0.8fr;
-  gap: clamp(48px, 8vw, 140px);
+  grid-template-columns: minmax(640px, 820px) minmax(320px, 430px);
+  gap: clamp(56px, 7vw, 120px);
   align-items: center;
-  max-width: 1100px;
+  justify-content: center;
+  width: min(86vw, 1350px);
   margin: 0 auto;
 }
 
 .signup-map {
   width: 100%;
   height: auto;
+  display: block;
   box-shadow: 0 24px 64px var(--wtc-shadow);
 }
 
 .signup-aside {
   font-family: var(--wtc-sans);
-  font-size: 15px;
-  line-height: 1.45;
+  font-size: 18px;
+  line-height: 1.5;
   color: #fff3ee;
-  justify-self: center;
+  justify-self: start;
 }
 
 .signup-aside strong {
