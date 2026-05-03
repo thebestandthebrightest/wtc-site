@@ -415,7 +415,10 @@ select {
 }
 
 .signup-page {
-  /* inherits content-page layout */
+  min-height: calc(100vh - 140px); /* adjust if header height differs */
+  display: flex;
+  align-items: center;   /* 🔥 THIS is what vertically centers */
+  justify-content: center;
 }
 
 .signup-page__title {
@@ -457,7 +460,7 @@ select {
 
 @media (max-width: 900px) {
   .signup-page {
-    min-height: auto;
+    min-height: calc(100vh - 180px);
     align-items: flex-start;
   }
 
