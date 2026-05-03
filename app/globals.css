@@ -828,79 +828,94 @@ select {
   }
 }
 
-/* ===== TEAM DESKTOP SCALE FIX (MacBook / large screens) ===== */
+/* ===== TEAM PAGE: GOAL SITE STYLE ===== */
+
 @media (min-width: 961px) {
-  .team-spotlight__inner {
-    grid-template-columns: minmax(420px, 520px) minmax(260px, 360px);
-    column-gap: clamp(60px, 6vw, 120px);
-    align-items: center;
+  .team-page {
+    max-width: none;
+    padding: 120px 4vw 140px;
   }
 
-  .team-portrait {
-    width: 560px;
-    max-width: 520px;
-  }
-
-  .team-copy {
-    max-width: 360px;
-  }
-
-  .team-card__bio {
-    font-size: 14px;
-    line-height: 1.6;
-  }
-
-  .team-card__meta {
-    font-size: 17px;
-  }
-}
-
-/* ===== FINAL TEAM PAGE MATCH TO GOAL SITE ===== */
-@media (min-width: 961px) {
   .team-page .page-heading {
-    margin: 0 0 120px;
-    padding-left: 4vw;
+    max-width: none;
+    margin: 0 0 150px;
+    padding: 0;
+    font-family: "Libre Caslon Display", serif;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 1;
+    color: #fff3ee;
   }
 
   .team-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 190px;
     max-width: none;
     margin: 0;
-    padding: 0 4vw;
-    grid-template-columns: repeat(2, minmax(610px, 1fr));
-    column-gap: 80px;
-    row-gap: 160px;
+    padding: 0;
+  }
+
+  .team-spotlight {
+    width: 100%;
   }
 
   .team-spotlight__inner {
-    grid-template-columns: 320px 320px;
-    column-gap: 48px;
-    align-items: end;
+    display: grid;
+    grid-template-columns: 390px 420px;
+    column-gap: 72px;
+    align-items: center;
+    width: fit-content;
+  }
+
+  .team-spotlight:nth-child(odd) .team-spotlight__inner {
+    margin-left: 0;
+    margin-right: auto;
+  }
+
+  .team-spotlight:nth-child(even) .team-spotlight__inner {
+    margin-left: auto;
+    margin-right: 0;
   }
 
   .team-portrait {
-    width: 320px !important;
-    max-width: 320px !important;
+    width: 390px !important;
+    max-width: 390px !important;
+    height: auto;
+    object-fit: contain;
+    box-shadow: none;
   }
 
   .team-copy {
-    width: 320px;
-    max-width: 320px;
+    width: 420px;
+    max-width: 420px;
   }
 
   .team-card__name {
-    font-size: 17px;
-    margin-bottom: 18px;
-    opacity: 0.8;
+    margin: 0 0 24px;
+    font-family: "Libre Caslon Display", serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.1;
+    color: #d9958c;
+    opacity: 1;
   }
 
   .team-card__meta {
-    font-size: 18px;
-    line-height: 1.35;
-    margin-bottom: 24px;
+    margin: 0 0 32px;
+    font-family: "Libre Caslon Text", serif;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 1.15;
+    color: #fff3ee !important;
   }
 
   .team-card__bio {
-    font-size: 13px;
-    line-height: 1.55;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.45;
+    letter-spacing: 0;
+    color: #fff3ee !important;
   }
 }
