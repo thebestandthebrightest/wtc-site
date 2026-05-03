@@ -828,84 +828,61 @@ select {
   }
 }
 
-/* ===== TEAM PAGE: GOAL SITE STYLE ===== */
+/* ===== TEAM PAGE: TWO MEMBERS SIDE BY SIDE ===== */
 
 @media (min-width: 961px) {
   .team-page {
     max-width: none;
-    padding: 120px 4vw 140px;
+    padding: 120px 4vw 130px;
   }
 
   .team-page .page-heading {
-    max-width: none;
-    margin: 0 0 150px;
-    padding: 0;
-    font-family: "Libre Caslon Display", serif;
+    margin: 0 0 120px;
+    padding-left: 0;
     font-size: 64px;
-    font-weight: 400;
-    line-height: 1;
     color: #fff3ee;
   }
 
   .team-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 190px;
-    max-width: none;
-    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: clamp(70px, 8vw, 140px);
+    row-gap: 150px;
+    max-width: 1500px;
+    margin: 0 auto;
     padding: 0;
-  }
-
-  .team-spotlight {
-    width: 100%;
   }
 
   .team-spotlight__inner {
     display: grid;
-    grid-template-columns: 390px 420px;
-    column-gap: 72px;
+    grid-template-columns: 330px 340px;
+    column-gap: 54px;
     align-items: center;
-    width: fit-content;
-  }
-
-  .team-spotlight:nth-child(odd) .team-spotlight__inner {
-    margin-left: 0;
-    margin-right: auto;
-  }
-
-  .team-spotlight:nth-child(even) .team-spotlight__inner {
-    margin-left: auto;
-    margin-right: 0;
   }
 
   .team-portrait {
-    width: 390px !important;
-    max-width: 390px !important;
+    width: 330px !important;
+    max-width: 330px !important;
     height: auto;
     object-fit: contain;
     box-shadow: none;
   }
 
   .team-copy {
-    width: 420px;
-    max-width: 420px;
+    width: 340px;
+    max-width: 340px;
   }
 
   .team-card__name {
-    margin: 0 0 24px;
+    margin: 0 0 20px;
     font-family: "Libre Caslon Display", serif;
-    font-size: 22px;
-    font-weight: 400;
-    line-height: 1.1;
+    font-size: 21px;
     color: #d9958c;
-    opacity: 1;
   }
 
   .team-card__meta {
-    margin: 0 0 32px;
-    font-family: "Libre Caslon Text", serif;
+    margin: 0 0 28px;
     font-size: 25px;
-    font-weight: 400;
     line-height: 1.15;
     color: #fff3ee !important;
   }
@@ -913,9 +890,13 @@ select {
   .team-card__bio {
     margin: 0;
     font-family: Arial, sans-serif;
-    font-size: 16px;
+    font-size: 15.5px;
     line-height: 1.45;
-    letter-spacing: 0;
     color: #fff3ee !important;
+  }
+
+  .team-portrait:hover {
+    transform: none;
+    box-shadow: none;
   }
 }
