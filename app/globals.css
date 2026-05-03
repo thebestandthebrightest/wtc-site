@@ -279,21 +279,21 @@ select {
 
 .team-spotlight__inner {
   display: grid;
-  grid-template-columns: minmax(300px, 380px) minmax(300px, 420px);
-  column-gap: clamp(28px, 2vw, 44px);
-  align-items: start;
+  grid-template-columns: 1.1fr 1fr;
+  column-gap: clamp(40px, 4vw, 80px);
+  align-items: center;
 }
 
 .team-portrait {
   width: 100%;
-  max-width: 460px;
+  max-width: none;
   height: auto;
   object-fit: contain;
   transform: none;
 }
 
 .team-copy {
-  max-width: 420px;
+  max-width: 500px;
 }
 
 .team-card__name {
