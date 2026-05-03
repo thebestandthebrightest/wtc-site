@@ -837,45 +837,52 @@ select {
   }
 }
 
-/* ===== FINAL TEAM POLISH ===== */
+/* ===== FINAL TEAM PAGE MATCH TO GOAL SITE ===== */
 @media (min-width: 961px) {
+  .team-page .page-heading {
+    margin: 0 0 120px;
+    padding-left: 4vw;
+  }
 
   .team-grid {
-    max-width: 1200px;
-    margin: 0 auto;
-    column-gap: 120px;
-    row-gap: 180px;
+    max-width: none;
+    margin: 0;
+    padding: 0 4vw;
+    grid-template-columns: repeat(2, minmax(610px, 1fr));
+    column-gap: 80px;
+    row-gap: 160px;
   }
 
   .team-spotlight__inner {
-    grid-template-columns: 280px 300px;
+    grid-template-columns: 320px 320px;
     column-gap: 48px;
-    align-items: start;
+    align-items: end;
   }
 
   .team-portrait {
-    width: 280px !important;
-    max-width: 280px !important;
+    width: 320px !important;
+    max-width: 320px !important;
   }
 
   .team-copy {
-    max-width: 300px;
+    width: 320px;
+    max-width: 320px;
   }
 
   .team-card__name {
-    font-size: 16px;
-    margin-bottom: 12px;
+    font-size: 17px;
+    margin-bottom: 18px;
     opacity: 0.8;
   }
 
   .team-card__meta {
     font-size: 18px;
     line-height: 1.35;
-    margin-bottom: 26px;
+    margin-bottom: 24px;
   }
 
   .team-card__bio {
     font-size: 13px;
-    line-height: 1.65;
+    line-height: 1.55;
   }
 }
