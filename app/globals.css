@@ -893,51 +893,51 @@ select {
   }
 
   .team-grid {
-    max-width: none;
-    margin: 0;
+    max-width: 1420px;
+    margin: 0 auto;
     padding: 0;
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    column-gap: clamp(70px, 7vw, 130px);
-    row-gap: 140px;
+    grid-template-columns: repeat(2, minmax(560px, 1fr));
+    column-gap: clamp(72px, 8vw, 140px);
+    row-gap: 150px;
   }
 
   .team-spotlight__inner {
     display: grid;
-    grid-template-columns: 360px 310px;
-    column-gap: 48px;
+    grid-template-columns: 300px 300px;
+    column-gap: 42px;
     align-items: end;
   }
 
   .team-portrait {
-    width: 360px !important;
-    max-width: 360px !important;
+    width: 300px !important;
+    max-width: 300px !important;
     height: auto;
     object-fit: contain;
   }
 
   .team-copy {
-    max-width: 310px;
-    background: transparent;
+    width: 300px;
+    max-width: 300px;
   }
 
   .team-card__name {
-    font-size: 18px;
+    font-size: 17px;
     line-height: 1.1;
     margin: 0 0 18px;
     color: var(--wtc-text-soft) !important;
   }
 
   .team-card__meta {
-    font-size: 17px;
-    line-height: 1.45;
+    font-size: 18px;
+    line-height: 1.35;
     margin: 0 0 22px;
     color: #fff3ee !important;
   }
 
   .team-card__bio {
     font-size: 13px;
-    line-height: 1.55;
+    line-height: 1.5;
     margin: 0;
     color: #fff3ee !important;
   }
