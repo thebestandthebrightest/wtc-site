@@ -441,17 +441,18 @@ select {
 }
 
 .signup-aside {
-  font-family: "Libre Caslon Text", serif;
-  font-size: clamp(16px, 1.55vw, 22px);
-  line-height: 1.58;
-  color: var(--wtc-white);
+  font-family: var(--wtc-sans);
+  font-size: 15px;
+  line-height: 1.45;
+  color: #fff3ee;
 }
 
 .signup-aside p {
-  margin: 0 0 26px;
+  margin: 0 0 28px;
 }
 
 .signup-aside strong {
+  font-family: var(--wtc-sans);
   font-weight: 700;
 }
 
