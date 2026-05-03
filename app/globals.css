@@ -279,7 +279,7 @@ select {
 
 .team-spotlight__inner {
   display: grid;
-  grid-template-columns: 1.1fr 1fr;
+  grid-template-columns: 1.25fr 1fr;
   column-gap: clamp(40px, 4vw, 80px);
   align-items: center;
 }
