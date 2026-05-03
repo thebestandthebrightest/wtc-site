@@ -701,13 +701,6 @@ select {
   }
 }
 
-/* ===== TEAM PORTRAITS ===== */
-
-.team-portrait:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.22);
-}
-
 /* ===== TEAM CARD ENTRANCE ===== */
 
 .team-grid .team-spotlight {
@@ -917,20 +910,6 @@ select {
     filter 0.7s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.team-portrait::after {
-  content: "";
-  position: absolute;
-  inset: -20%;
-  background: radial-gradient(
-    circle at 50% 40%,
-    rgba(255, 248, 244, 0.18),
-    transparent 65%
-  );
-  opacity: 0;
-  transition: opacity 0.7s ease;
-  pointer-events: none;
-}
-
 .team-spotlight__inner {
   position: relative;
   isolation: isolate;
@@ -966,36 +945,49 @@ select {
     filter 0.75s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.team-spotlight__inner:hover .team-portrait {
-  transform: translateY(-6px) scale(1.03);
-  filter:
-    drop-shadow(0 20px 36px rgba(0, 0, 0, 0.28))
-    brightness(1.05);
+/* ===== CLEAN ELITE SPOTLIGHT ===== */
+
+.team-spotlight__inner {
+  position: relative;
+  isolation: isolate;
 }
 
-/* ===== TEAM SPOTLIGHT INTERACTION ===== */
-
-.team-grid {
-  transition: opacity 0.4s ease;
+/* soft spotlight behind */
+.team-spotlight__inner::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  width: 380px;
+  height: 380px;
+  transform: translateY(-50%);
+  background: radial-gradient(
+    circle,
+    rgba(255, 248, 244, 0.28),
+    transparent 70%
+  );
+  opacity: 0;
+  transition: opacity 0.7s ease;
+  pointer-events: none;
+  z-index: -1;
 }
 
-.team-spotlight {
+/* image motion */
+.team-portrait {
   transition:
-    opacity 0.5s ease,
-    transform 0.5s ease,
-    filter 0.5s ease;
+    transform 0.75s cubic-bezier(0.16, 1, 0.3, 1),
+    filter 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform, filter;
 }
 
-/* when hovering the grid, dim ALL */
-.team-grid:hover .team-spotlight {
-  opacity: 0.45;
-  filter: grayscale(10%) brightness(0.9);
-}
-
-/* bring hovered one back */
-.team-grid .team-spotlight:hover {
+/* hover effect */
+.team-spotlight__inner:hover::before {
   opacity: 1;
-  filter: none;
-  transform: translateY(-4px);
-  z-index: 2;
+}
+
+.team-spotlight__inner:hover .team-portrait {
+  transform: translateY(-6px) scale(1.025);
+  filter:
+    drop-shadow(0 18px 34px rgba(0, 0, 0, 0.24))
+    brightness(1.04);
 }
