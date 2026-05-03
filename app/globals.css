@@ -261,75 +261,64 @@ select {
 }
 
 .team-page .page-heading {
-  max-width: 1520px;
+  max-width: 1700px;
   margin: 0 auto 120px;
-  color: var(--wtc-text);
+  padding: 0 4vw
 }
 
 .team-grid {
-  max-width: 1520px;
+  max-width: 1700px;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 4vw;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  column-gap: clamp(64px, 7vw, 130px);
+  column-gap: clamp(56px, 4vw, 80px);
   row-gap: 120px;
-}
-
-.team-spotlight {
-  min-width: 0;
 }
 
 .team-spotlight__inner {
   display: grid;
-  grid-template-columns: minmax(320px, 520px) minmax(360px, 520px);
-  column-gap: clamp(64px, 6vw, 120px);
-  align-items: center;
+  grid-template-columns: minmax(300px, 380px) minmax(300px, 420px);
+  column-gap: clamp(28px, 2vw, 44px);
+  align-items: start;
 }
 
 .team-portrait {
   width: 100%;
-  max-width: 520px;
-  min-width: 0;
+  max-width: 380px;
   height: auto;
-  max-height: none;
   object-fit: contain;
-  box-shadow: none;
+  transform: none;
 }
 
 .team-copy {
-  max-width: 500px;
-}
-
-.team-copy h2,
-.team-copy p {
-  margin-top: 0;
+  max-width: 420px;
 }
 
 .team-card__name {
-  margin: 0 0 18px;
-  color: var(--wtc-text);
+  margin: 0 0 16px;
   font-family: "Cormorant Garamond", "Playfair Display", serif;
-  font-size: clamp(24px, 1.8vw, 32px);
-  font-weight: 500;
-  line-height: 1.08;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 1.05;
+  letter-spacing: -0.01em;
 }
 
 .team-card__meta {
   margin: 0 0 28px;
-  color: var(--wtc-text-muted);
   font-family: "Cormorant Garamond", "Playfair Display", serif;
-  font-size: clamp(15px, 1.1vw, 18px);
-  line-height: 1.35;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 1.15;
+  color: #fff3ee;
 }
 
 .team-card__bio {
-  max-width: 500px;
-  margin: 0;
-  color: var(--wtc-white);
-  font-family: Inter, var(--wtc-sans);
-  font-size: clamp(14px, 0.95vw, 15px);
-  line-height: 1.55;
+  max-width: 380px;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.45;
+  color: #fff3ee;
 }
 
 .team-card__bio--muted {
