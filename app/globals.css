@@ -794,3 +794,9 @@ select {
 .creation-card:nth-child(4n) img {
   animation-delay: 0.3s;
 }
+
+.team-card__name,
+.team-card__meta,
+.team-card__bio {
+  color: #fff3ee !important;
+}
