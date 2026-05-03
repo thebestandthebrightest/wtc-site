@@ -930,3 +930,45 @@ select {
   transition: opacity 0.7s ease;
   pointer-events: none;
 }
+
+.team-spotlight__inner {
+  position: relative;
+  isolation: isolate;
+}
+
+.team-spotlight__inner::before {
+  content: "";
+  position: absolute;
+  left: -35px;
+  top: 45%;
+  width: 430px;
+  height: 430px;
+  transform: translateY(-50%);
+  background: radial-gradient(
+    circle,
+    rgba(255, 248, 244, 0.18) 0%,
+    rgba(255, 248, 244, 0.08) 35%,
+    transparent 70%
+  );
+  opacity: 0;
+  transition: opacity 0.75s ease;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.team-spotlight__inner:hover::before {
+  opacity: 1;
+}
+
+.team-portrait {
+  transition:
+    transform 0.75s cubic-bezier(0.16, 1, 0.3, 1),
+    filter 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.team-spotlight__inner:hover .team-portrait {
+  transform: translateY(-6px) scale(1.03);
+  filter:
+    drop-shadow(0 20px 36px rgba(0, 0, 0, 0.28))
+    brightness(1.05);
+}
