@@ -497,7 +497,7 @@ select {
 
   .team-grid {
     grid-template-columns: 1fr;
-    gap: 72 px;
+    gap: 72px;
     padding: 0 1rem;
   }
 
@@ -795,8 +795,42 @@ select {
   animation-delay: 0.3s;
 }
 
-.team-card__name,
 .team-card__meta,
 .team-card__bio {
   color: #fff3ee !important;
+}
+
+/* ===== CREATIONS DESKTOP LAYOUT ===== */
+@media (min-width: 961px) {
+  .creations-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 48px 32px;
+  }
+}
+
+/* ===== TEAM DESKTOP SCALE FIX (MacBook / large screens) ===== */
+@media (min-width: 961px) {
+  .team-spotlight__inner {
+    grid-template-columns: minmax(420px, 520px) minmax(260px, 360px);
+    column-gap: clamp(60px, 6vw, 120px);
+    align-items: center;
+  }
+
+  .team-portrait {
+    width: 560px;
+    max-width: 520px;
+  }
+
+  .team-copy {
+    max-width: 360px;
+  }
+
+  .team-card__bio {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .team-card__meta {
+    font-size: 17px;
+  }
 }
