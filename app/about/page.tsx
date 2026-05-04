@@ -8,7 +8,7 @@ export default function AboutPage() {
       <main className="about-minimal">
         <section className="about-minimal__inner">
           <h1 className="about-minimal__statement">
-            There wasn’t a place to work with clay on campus.
+            There wasn’t a place for clay on campus.
             <br />
             Now there is.
           </h1>

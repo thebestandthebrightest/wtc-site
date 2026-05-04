@@ -300,6 +300,19 @@ select {
   opacity: 0.75;
 }
 
+.about-hero h1 {
+  font-family: "Libre Caslon Display", serif;
+  font-size: 64px;
+  line-height: 1.05;
+  max-width: 700px;
+}
+
+.about-hero h1 span {
+  display: block;
+  margin-top: 16px;
+  opacity: 0.85; /* slightly softer */
+}
+
 @media (max-width: 700px) {
   .about-minimal {
     min-height: calc(100vh - 90px);
