@@ -13,7 +13,19 @@ export function CreationsGrid({ pieces }: { pieces: Piece[] }) {
     if (!root) return;
 
     const cards = root.querySelectorAll<HTMLElement>(".creation-card");
-    cards.forEach((card) => card.classList.add("visible"));
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      },
+      { threshold: 0.15 }
+    );
+
+    cards.forEach((card) => observer.observe(card));
 
     const targets = new Map<HTMLElement, { x: number; y: number }>();
 
@@ -56,6 +68,7 @@ export function CreationsGrid({ pieces }: { pieces: Piece[] }) {
     rafId = requestAnimationFrame(animate);
 
     return () => {
+      observer.disconnect();
       window.removeEventListener("mousemove", handleMove);
       window.removeEventListener("mouseleave", resetMagnet);
       cancelAnimationFrame(rafId);
@@ -65,7 +78,7 @@ export function CreationsGrid({ pieces }: { pieces: Piece[] }) {
   return (
     <div className="creations-grid" aria-label="Clay creations gallery" ref={gridRef}>
       {pieces.map((piece) => (
-        <figure className="creations-item creation-card reveal visible" key={piece.key}>
+        <figure className="creations-item creation-card reveal" key={piece.key}>
           <Image
             src={piece.src}
             alt={piece.alt}
