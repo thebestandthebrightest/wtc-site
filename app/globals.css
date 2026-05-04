@@ -258,10 +258,8 @@ select {
 }
 
 .about-minimal {
-  min-height: calc(100vh - 220px);
-  display: flex;
-  align-items: flex-start;
-  padding: 90px clamp(24px, 7vw, 110px) 70px;
+  min-height: calc(100vh - 90px);
+  padding: 120px 4vw 96px;
 }
 
 .about-minimal__inner {
@@ -310,17 +308,14 @@ select {
 .about-hero h1 span {
   display: block;
   margin-top: 16px;
-  opacity: 0.85; /* slightly softer */
-}
-
-.about-hero h1 span {
-  display: block;
-  animation: softReveal 900ms ease both;
+  opacity: 0;
+  animation: softReveal 1s ease forwards;
   animation-delay: 200ms;
 }
 
 .about-hero h1 {
-  animation: softReveal 900ms ease both;
+  opacity: 0;
+  animation: softReveal 1s ease forwards;
 }
 
 @media (max-width: 700px) {
@@ -728,7 +723,7 @@ select {
 @keyframes softReveal {
   from {
     opacity: 0;
-    transform: translateY(16px);
+    transform: translateY(32px);
   }
   to {
     opacity: 1;
