@@ -476,7 +476,19 @@ select {
 
 .creations-item {
   margin: 0;
+  opacity: 0;
+  transform: translateY(24px);
+  animation: fadeUp 0.8s ease forwards;
 }
+
+.creations-item:nth-child(1) { animation-delay: 0.08s; }
+.creations-item:nth-child(2) { animation-delay: 0.16s; }
+.creations-item:nth-child(3) { animation-delay: 0.24s; }
+.creations-item:nth-child(4) { animation-delay: 0.32s; }
+.creations-item:nth-child(5) { animation-delay: 0.40s; }
+.creations-item:nth-child(6) { animation-delay: 0.48s; }
+.creations-item:nth-child(7) { animation-delay: 0.56s; }
+.creations-item:nth-child(8) { animation-delay: 0.64s; }
 
 .creations-item img {
   width: 100%;
@@ -1082,4 +1094,13 @@ select {
   background-image: url("https://grainy-gradients.vercel.app/noise.svg");
   background-size: 200px 200px;
   mix-blend-mode: soft-light;
+}
+
+/* ===== RESTORE PAGE TOP SPACING AFTER GRAIN ===== */
+
+.page-shell__inner {
+  position: relative;
+  z-index: 2;
+  min-height: 100vh;
+  padding: 92px var(--wtc-page-pad) 108px !important;
 }
