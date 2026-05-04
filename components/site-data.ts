@@ -71,16 +71,15 @@ export const teamMembers: TeamMember[] = [
     name: "Leudgiana Marcelin",
     role: "Research Chair",
     meta: "Research Chair · Class of 2027 · East Orange, NJ · Exercise Science",
-    bio: "Leudgiana Marcelin Class of 2027 is from East Orange. After working as a teacher at a daycare, she developed a passion for children’s health and well-being, inspiring her journey toward pediatric medicine. She is majoring in Exercise Science on the pre-medical track, with a special interest in stem cell research. Outside of class, she has been involved with Glamour Gals, and Gen’ Next. In her free time, she enjoys trying new activities, working out, and reading.",
-    imageSrc: "/assets/team/leudgiana.png",
+    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",    imageSrc: "/assets/team/leudgiana.png",
     imageAlt: "Leudgiana Marcelin team portrait card",
     imagePosition: "50% 31%"
   },
   {
     name: "Ikjot Puar",
     role: "Secretary",
-    meta: "Secretary",
-    bio: "Bio forthcoming.",
+    meta: "Secretary · Class of 2026 · Piscataway, NJ · Psychology",
+    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",
     imageSrc: "/assets/team/ikjot.png",
     imageAlt: "Ikjot Puar team portrait card",
     imagePosition: "51% 31%"
@@ -89,25 +88,23 @@ export const teamMembers: TeamMember[] = [
     name: "Zabrina Garofalo",
     role: "Social Media Chair",
     meta: "Social Media Chair · Class of 2027 · Middletown, NJ · Biological Sciences",
-    bio: "Zabrina (Class of 2027) is from Middletown, New Jersey, and has lived here for the past 7 years. She is pursuing a major in Biological sciences and is on the pre-medical track. Outside of classroom, she volunteers at a non-profit health organization and translates for patients who are unable to speak English. Although she loves science with her whole heart, she values creativity just as much. She loves to draw both digitally and traditionally, bake, play video-games, write, and spend quality time with those closest to her.",
-    imageSrc: "/assets/team/zabrina.png",
+    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",    imageSrc: "/assets/team/zabrina.png",
     imageAlt: "Zabrina Garofalo team portrait card",
     imagePosition: "49% 30%"
   },
   {
     name: "Zofia Garofalo",
     role: "Social Media Chair",
-    meta: "Social Media Chair",
-    bio: "Bio forthcoming.",
-    imageSrc: "/assets/team/zofia.png",
+    meta: "Social Media Chair · Class of 2029 · Middletown, NJ · Veterinary Sciences",
+    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",    imageSrc: "/assets/team/zofia.png",
     imageAlt: "Zofia Garofalo team portrait card",
     imagePosition: "52% 31%"
   },
   {
     name: "Sheila Tabanli",
     role: "Faculty Sponsor",
-    meta: "Faculty Sponsor · Mathematics · Rutgers University–New Brunswick",
-    bio: "Sheila Tabanli earned her Ph.D. in Computer Science from Missouri University of Science & Technology and is currently an Assistant Teaching Professor of Mathematics at Rutgers University–New Brunswick. Her work focuses on designing student-centered, evidence-based instructional strategies that improve learning experiences and foster a sense of belonging in math classrooms. She developed an instructional framework grounded in cognitive science and Social Emotional Learning (SEL). With over 20 years of experience in K–20 education, she brings deep expertise in inclusive and research-based teaching practices. She is also a Rutgers Chancellor Teaching Fellow, developing pedagogical innovations to support personalized learning pathways. In addition, she supports Wellness Through Clay as a dedicated faculty sponsor, offering guidance to advance its mission of creativity, wellness, and community.",
+    meta: "Faculty Sponsor · Department of Mathematics · Rutgers University–New Brunswick",
+    bio: "Sheila Tabanli earned her Ph.D. in Computer Science from Missouri University of Science & Technology and is currently an Associate Professor of Mathematics at Rutgers University–New Brunswick. Her work focuses on designing student-centered, evidence-based instructional strategies that improve learning experiences and foster a sense of belonging in math classrooms. She developed an instructional framework grounded in cognitive science and Social Emotional Learning (SEL). With over 20 years of experience in K–20 education, she brings deep expertise in inclusive and research-based teaching practices. She is also a Rutgers Chancellor Teaching Fellow, developing pedagogical innovations to support personalized learning pathways. In addition, she supports Wellness Through Clay as a dedicated faculty sponsor, offering guidance to advance its mission of creativity, wellness, and community.",
     imageSrc: "/assets/team/tabanli.jpg",
     imageAlt: "Sheila Tabanli portrait",
     imagePosition: "50% 25%"
