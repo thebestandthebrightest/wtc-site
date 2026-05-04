@@ -78,11 +78,16 @@ select {
   overflow: clip;
 }
 
-.page-shell__inner,
+.page-shell__inner {
+  position: relative;
+  z-index: 2;
+  min-height: 100vh;
+  padding: 92px var(--wtc-page-pad) 108px;
+}
+
 .site-navbar,
 .site-logo,
 .site-footer {
-  position: relative;
   z-index: 2;
 }
 
