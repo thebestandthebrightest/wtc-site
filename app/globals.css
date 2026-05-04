@@ -477,10 +477,10 @@ select {
 .creations-item {
   margin: 0;
   opacity: 0;
-  transform: translateY(36px);
+  transform: translateY(28px);
   transition:
-    opacity 1.2s cubic-bezier(0.16, 1, 0.3, 1),
-    transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+    opacity 1.25s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 1.25s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .creations-item.visible {
@@ -488,10 +488,21 @@ select {
   transform: translateY(0);
 }
 
-.creations-item.visible:nth-child(4n + 1) { transition-delay: 0.05s; }
-.creations-item.visible:nth-child(4n + 2) { transition-delay: 0.22s; }
-.creations-item.visible:nth-child(4n + 3) { transition-delay: 0.39s; }
-.creations-item.visible:nth-child(4n + 4) { transition-delay: 0.56s; }
+/* first 8: calm one-by-one */
+.creations-item.visible:nth-child(1) { transition-delay: 0.08s; }
+.creations-item.visible:nth-child(2) { transition-delay: 0.22s; }
+.creations-item.visible:nth-child(3) { transition-delay: 0.36s; }
+.creations-item.visible:nth-child(4) { transition-delay: 0.50s; }
+.creations-item.visible:nth-child(5) { transition-delay: 0.64s; }
+.creations-item.visible:nth-child(6) { transition-delay: 0.78s; }
+.creations-item.visible:nth-child(7) { transition-delay: 0.92s; }
+.creations-item.visible:nth-child(8) { transition-delay: 1.06s; }
+
+/* after first 8: row-based stagger */
+.creations-item.visible:nth-child(n + 9):nth-child(4n + 1) { transition-delay: 0.08s; }
+.creations-item.visible:nth-child(n + 9):nth-child(4n + 2) { transition-delay: 0.22s; }
+.creations-item.visible:nth-child(n + 9):nth-child(4n + 3) { transition-delay: 0.36s; }
+.creations-item.visible:nth-child(n + 9):nth-child(4n + 4) { transition-delay: 0.50s; }
 
 .creations-item img {
   width: 100%;
