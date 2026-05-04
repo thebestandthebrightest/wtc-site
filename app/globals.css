@@ -257,6 +257,64 @@ select {
   color: var(--wtc-text-soft);
 }
 
+.about-minimal {
+  min-height: calc(100vh - 120px);
+  display: flex;
+  align-items: center;
+  padding: 80px clamp(24px, 7vw, 110px);
+}
+
+.about-minimal__inner {
+  max-width: 680px;
+}
+
+.about-minimal__statement {
+  font-family: "Libre Caslon Text", "Libre Caslon Display", serif;
+  font-size: clamp(42px, 6vw, 76px);
+  font-weight: 400;
+  line-height: 1.12;
+  letter-spacing: -0.025em;
+  color: #fff7ef;
+  margin: 0;
+}
+
+.about-minimal__signature {
+  font-family: "Libre Caslon Text", "Libre Caslon Display", serif;
+  font-size: 18px;
+  letter-spacing: 0.06em;
+  color: rgba(255, 247, 239, 0.72);
+  margin: 88px 0 20px;
+}
+
+.about-minimal__cta {
+  display: inline-block;
+  font-family: inherit;
+  font-size: 16.5px;
+  color: rgba(255, 247, 239, 0.85);
+  text-decoration: none;
+  transition: transform 180ms ease, opacity 180ms ease;
+}
+
+.about-minimal__cta:hover {
+  transform: translateX(4px);
+  opacity: 0.75;
+}
+
+@media (max-width: 700px) {
+  .about-minimal {
+    min-height: calc(100vh - 90px);
+    padding: 64px 24px;
+  }
+
+  .about-minimal__statement {
+    font-size: clamp(38px, 12vw, 54px);
+  }
+
+  .about-minimal__signature {
+    margin-top: 56px;
+  }
+}
+
 .team-page {
   max-width: none;
   padding: 120px 4vw 96px;

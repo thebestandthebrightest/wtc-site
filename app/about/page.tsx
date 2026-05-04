@@ -1,35 +1,25 @@
+import Link from "next/link";
+
 import { PageShell } from "../../components/PageShell";
-import { aboutParagraphs } from "../../components/site-data";
 
 export default function AboutPage() {
   return (
     <PageShell active="about">
-      <section className="content-page about-page">
-        <h1 className="page-heading">About</h1>
-        <div className="about-copy">
-          <p>
-            {aboutParagraphs[0][0]}
-            <span className="about-copy__underline">{aboutParagraphs[0][1]}</span>
-          </p>
-          <p>
-            <span className="about-copy__underline">{aboutParagraphs[1][0]}</span>
-          </p>
-          <p>
-            {aboutParagraphs[2][0]}
-            <span className="about-copy__underline">{aboutParagraphs[2][1]}</span>
-            {aboutParagraphs[2][2]}
-          </p>
-          <p>{aboutParagraphs[3][0]}</p>
-          <p>{aboutParagraphs[4][0]}</p>
-          <p>
-            <span className="about-copy__underline">{aboutParagraphs[5][0]}</span>
-          </p>
-          <p>{aboutParagraphs[6][0]}</p>
-          <p>{aboutParagraphs[7][0]}</p>
-          <p>{aboutParagraphs[8][0]}</p>
-          <p>{aboutParagraphs[9][0]}</p>
-        </div>
-      </section>
+      <main className="about-minimal">
+        <section className="about-minimal__inner">
+          <h1 className="about-minimal__statement">
+            There wasn’t a place to work with clay on campus.
+            <br />
+            Now there is.
+          </h1>
+
+          <p className="about-minimal__signature">Wellness Through Clay</p>
+
+          <Link href="/signup" className="about-minimal__cta">
+            Sign up →
+          </Link>
+        </section>
+      </main>
     </PageShell>
   );
 }
