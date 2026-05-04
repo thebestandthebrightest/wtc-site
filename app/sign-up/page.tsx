@@ -6,18 +6,18 @@ export default function SignUpPage() {
   return (
     <PageShell active="sign-up">
       <section className="content-page signup-page">
-        <div className="signup-layout">
-          <div>
-            <Image
-              className="signup-map"
-              src="/assets/maps/wtc-location-map.png"
-              alt="Wellness Through Clay Rutgers New Brunswick location map"
-              width={2000}
-              height={1125}
-              sizes="(max-width: 960px) 100vw, 68vw"
-            />
-          </div>
-          <div className="signup-aside">
+        <div className="map-container fade-up delay-1">
+          <Image
+            className="signup-map"
+            src="/assets/maps/wtc-location-map.png"
+            alt="Wellness Through Clay Rutgers New Brunswick location map"
+            width={2000}
+            height={1125}
+            sizes="(max-width: 960px) 100vw, 68vw"
+          />
+        </div>
+
+        <div className="signup-aside fade-up delay-2">
             <p>
               The sign up form will be released in Fall 2026. Follow our{" "}
               <a
