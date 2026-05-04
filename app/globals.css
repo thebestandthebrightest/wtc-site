@@ -84,6 +84,28 @@ select {
   padding: 92px var(--wtc-page-pad) 108px;
 }
 
+.page-shell::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.08;
+  background-image:
+    radial-gradient(circle at 20% 30%, rgba(255,255,255,0.18) 0 1px, transparent 1px),
+    radial-gradient(circle at 70% 80%, rgba(0,0,0,0.16) 0 1px, transparent 1px);
+  background-size: 18px 18px, 22px 22px;
+  mix-blend-mode: soft-light;
+}
+
+.page-shell__inner,
+.site-navbar,
+.site-logo,
+.site-footer {
+  position: relative;
+  z-index: 2;
+}
+
 .site-navbar {
   position: absolute;
   top: 46px;
