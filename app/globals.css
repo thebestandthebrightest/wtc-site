@@ -379,7 +379,7 @@ select {
   margin: 0 0 10px;
   font-family: "Libre Caslon Display", serif;
   font-weight: 400;
-  font-size: 25px;
+  font-size: 28px;
   line-height: 1.05;
   letter-spacing: -0.01em;
 }
@@ -397,13 +397,6 @@ select {
 
 .team-photo-section {
   margin-top: 132px;
-}
-
-.team-photo-section__title {
-  margin: 0 0 26px;
-  color: var(--wtc-text);
-  font-size: clamp(28px, 2.2vw, 34px);
-  font-weight: 500;
 }
 
 .team-photo-section__grid {
@@ -628,7 +621,7 @@ select {
   .team-spotlight__inner {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: start;
     gap: 28px;
     text-align: left;
   }
@@ -994,13 +987,13 @@ select {
     color: #fff3ee !important;
   }
 
-  .team-card__bio {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    font-size: 15.5px;
-    line-height: 1.45;
-    color: #fff3ee !important;
-  }
+.team-card__bio {
+  margin: 0;
+  font-family: "Libre Caslon Text", serif;
+  font-size: 16.5px;
+  line-height: 1.5;
+  color: #fff3ee !important;
+}
 
 .team-portrait {
   transition:
