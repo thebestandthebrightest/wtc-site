@@ -15,7 +15,7 @@ export default function AboutPage() {
 
           <p className="about-minimal__signature">Wellness Through Clay</p>
 
-          <Link href="/signup" className="about-minimal__cta">
+          <Link href="/sign-up" className="about-minimal__cta">
             Sign up →
           </Link>
         </section>

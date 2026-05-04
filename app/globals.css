@@ -258,10 +258,10 @@ select {
 }
 
 .about-minimal {
-  min-height: calc(100vh - 120px);
+  min-height: calc(100vh - 220px);
   display: flex;
-  align-items: center;
-  padding: 80px clamp(24px, 7vw, 110px);
+  align-items: flex-start;
+  padding: 90px clamp(24px, 7vw, 110px) 70px;
 }
 
 .about-minimal__inner {
@@ -270,7 +270,7 @@ select {
 
 .about-minimal__statement {
   font-family: "Libre Caslon Text", "Libre Caslon Display", serif;
-  font-size: clamp(42px, 6vw, 76px);
+  font-size: clamp(38px, 5.2vw, 66px);
   font-weight: 400;
   line-height: 1.12;
   letter-spacing: -0.025em;
