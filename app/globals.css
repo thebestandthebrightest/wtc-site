@@ -298,24 +298,10 @@ select {
   opacity: 0.75;
 }
 
-.about-hero h1 {
-  font-family: "Libre Caslon Display", serif;
-  font-size: 64px;
-  line-height: 1.05;
-  max-width: 700px;
-}
-
-.about-hero h1 span {
-  display: block;
-  margin-top: 16px;
+.about-minimal__statement {
   opacity: 0;
-  animation: softReveal 1s ease forwards;
-  animation-delay: 200ms;
-}
-
-.about-hero h1 {
-  opacity: 0;
-  animation: softReveal 1s ease forwards;
+  transform: translateY(60px);
+  animation: softReveal 1.6s cubic-bezier(0.16, 1, 0.3, 1) 0.25s forwards;
 }
 
 @media (max-width: 700px) {
@@ -723,11 +709,13 @@ select {
 @keyframes softReveal {
   from {
     opacity: 0;
-    transform: translateY(32px);
+    transform: translateY(60px);
+    filter: blur(4px);
   }
   to {
     opacity: 1;
     transform: translateY(0);
+    filter: blur(0);
   }
 }
 
