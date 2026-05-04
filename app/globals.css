@@ -477,8 +477,10 @@ select {
 .creations-item {
   margin: 0;
   opacity: 0;
-transform: translateY(40px);
-transition: all 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+  transform: translateY(36px);
+  transition:
+    opacity 1.2s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .creations-item.visible {
@@ -486,10 +488,10 @@ transition: all 1.2s cubic-bezier(0.16, 1, 0.3, 1);
   transform: translateY(0);
 }
 
-.creations-item.visible:nth-child(4n + 1) { transition-delay: 0s; }
-.creations-item.visible:nth-child(4n + 2) { transition-delay: 0.12s; }
-.creations-item.visible:nth-child(4n + 3) { transition-delay: 0.24s; }
-.creations-item.visible:nth-child(4n + 4) { transition-delay: 0.36s; }
+.creations-item.visible:nth-child(4n + 1) { transition-delay: 0.05s; }
+.creations-item.visible:nth-child(4n + 2) { transition-delay: 0.22s; }
+.creations-item.visible:nth-child(4n + 3) { transition-delay: 0.39s; }
+.creations-item.visible:nth-child(4n + 4) { transition-delay: 0.56s; }
 
 .creations-item img {
   width: 100%;
