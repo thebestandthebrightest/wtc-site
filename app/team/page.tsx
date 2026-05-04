@@ -8,7 +8,6 @@ export default function TeamPage() {
     <PageShell active="team">
       <section className="content-page team-page">
         <div className="team-hero">
-          <h1 className="page-heading">Our Team</h1>
         </div>
         <div className="team-grid">
           {teamMembers.map((member) => (
