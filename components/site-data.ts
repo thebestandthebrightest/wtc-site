@@ -70,16 +70,17 @@ export const teamMembers: TeamMember[] = [
   {
     name: "Leudgiana Marcelin",
     role: "Research Chair",
-    meta: "Research Chair · Class of 2027 · East Orange, NJ · Exercise Science",
-    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",    imageSrc: "/assets/team/leudgiana.png",
+    meta: "Research Chair · Class of 2027 · East Orange, NJ · Exercise Science, pre-medical track",
+    bio: "Leudgiana Marcelin is an Exercise Science major with a strong interest in the intersection of physical health and clinical research. She currently works as a Recreation Aide, where she enjoys the opportunity to work closely with the elderly, assisting them with daily engagement and wellness activities. Her professional experience in recreation has sparked a commitment to understanding how movement can improve the quality of life for older populations. Leudgiana is dedicated to applying her academic background to meaningful research within her field. In her spare time, she is an avid reader and enjoys staying active through outdoor hobbies like hiking.",
+    imageSrc: "/assets/team/leudgiana.png",
     imageAlt: "Leudgiana Marcelin team portrait card",
     imagePosition: "50% 31%"
   },
   {
     name: "Ikjot Puar",
     role: "Secretary",
-    meta: "Secretary · Class of 2026 · Piscataway, NJ · Psychology",
-    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",
+    meta: "Secretary · Class of 2026 · Piscataway, NJ · Psychology + Biology, pre-optometry track",
+    bio: "Ikjot Puar is from Piscataway, New Jersey, and is pursuing a major in Psychology with a minor in Biology on the pre-optometry track. She has been a member of RUPOPS, the Pre-Optometry Professions Society, for all of her years at Rutgers and served as President of the organization this past year. She is also a veteran volunteer for the New Jersey Special Olympics and the local clinical coordinator for Sikh Medical Initiative. Outside of school, Ikjot loves to draw and paint, cook, and run.                                                                  ",
     imageSrc: "/assets/team/ikjot.png",
     imageAlt: "Ikjot Puar team portrait card",
     imagePosition: "51% 31%"
@@ -87,16 +88,17 @@ export const teamMembers: TeamMember[] = [
   {
     name: "Zabrina Garofalo",
     role: "Social Media Chair",
-    meta: "Social Media Chair · Class of 2027 · Middletown, NJ · Biological Sciences",
-    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",    imageSrc: "/assets/team/zabrina.png",
+    meta: "Social Media Chair · Class of 2027 · Middletown, NJ · Biology, pre-medical track",
+    bio: "Zabrina Garofalo is from Middletown, New Jersey, and has lived there for the past 8 years. She is pursuing a major in Biological Sciences and is on the pre-medical track. Outside of the classroom, she volunteers at a non-profit health organization as a community health worker (CHW) and translates for patients who are unable to speak English. Although she adores science, she values creativity just as much. She loves art, baking, playing video games, drawing both digitally and traditionally, writing, and spending quality time with those closest to her. Fun fact: Zabrina has moved over 10 times!                                                                                                                                                                                     ",    
+    imageSrc: "/assets/team/zabrina.png",
     imageAlt: "Zabrina Garofalo team portrait card",
     imagePosition: "49% 30%"
   },
   {
     name: "Zofia Garofalo",
     role: "Social Media Chair",
-    meta: "Social Media Chair · Class of 2029 · Middletown, NJ · Veterinary Sciences",
-    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",    imageSrc: "/assets/team/zofia.png",
+    meta: "Social Media Team Member · Class of 2030 · Middletown, NJ · Animal Science, pre-veterinary track",
+    bio: "Zofia Garofalo moved from California to Middletown, New Jersey in 6th grade. Since then, they have decided to pursue their dream of becoming a veterinarian. Being a freshman, they haven’t had the opportunity to volunteer or research anything yet, but they were the treasurer for their previous school’s Environmental Club and participated in, through nomination, the Teen Arts Show. Along with a passion for the sciences, they have a love for all types of art. They have made clay creations before, but prefer drawing, both digitally and traditionally, and painting. They also enjoy playing video games, watching movies and anime, reading manga, watching and reading horror-related content, and spending time with their closest friends and family. Fun fact: Zofia has dyed their hair over 58 times!",
     imageAlt: "Zofia Garofalo team portrait card",
     imagePosition: "52% 31%"
   },
