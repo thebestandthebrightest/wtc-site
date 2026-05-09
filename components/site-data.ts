@@ -53,7 +53,7 @@ export const teamMembers: TeamMember[] = [
     name: "Vivian Glenn",
     role: "Founder & President",
     meta: "Founder & President · Class of 2027 · Moorestown, NJ · Public Health",
-    bio: "Vivian Glenn is the Founder and President of Wellness Through Clay, a student-led initiative that creates space for students to unwind, connect, and explore ceramics. After taking ceramics throughout high school, she saw there wasn’t a place to engage with it recreationally at Rutgers and started WTC to bring that experience to campus. She is also involved in public health research, with experience at Brown University School of Public Health, the Rutgers Center for Alcohol and Substance Use Studies, and the RWJ Women’s Health Institute, focusing on substance use disorder, mental health, and policy. She works as a Learning Assistant for Physics for the Sciences. Outside of school, she enjoys baking, exploring coffee shops, and traveling. Fun fact: Vivian has traveled to 14 countries in 3 months!                                                                                                                              ",
+    bio: "Vivian Glenn is the Founder and President of Wellness Through Clay, a student-led initiative that creates space for students to unwind, connect, and explore ceramics. After taking ceramics throughout high school, she saw there wasn’t a place to engage with it recreationally at Rutgers and started WTC to bring that experience to campus. She is also involved in public health research, with experience at Brown University School of Public Health, the Rutgers Center for Alcohol and Substance Use Studies, and the RWJ Women’s Health Institute, focusing on substance use disorder, mental health, and policy. She works as a Learning Assistant for Physics for the Sciences. Outside of school, she enjoys baking, exploring coffee shops, and traveling. Fun fact: Vivian has traveled to 14 countries in 3 months!",
     imageSrc: "/assets/team/vivian.png",
     imageAlt: "Vivian Glenn headshot",
     imagePosition: "50% 35%"
@@ -80,7 +80,7 @@ export const teamMembers: TeamMember[] = [
     name: "Ikjot Puar",
     role: "Secretary",
     meta: "Secretary · Class of 2026 · Piscataway, NJ · Psychology + Biology, pre-optometry track",
-    bio: "Ikjot Puar is from Piscataway, New Jersey, and is pursuing a major in Psychology with a minor in Biology on the pre-optometry track. She has been a member of RUPOPS, the Pre-Optometry Professions Society, for all of her years at Rutgers and served as President of the organization this past year. She is also a veteran volunteer for the New Jersey Special Olympics and the local clinical coordinator for Sikh Medical Initiative. Outside of school, Ikjot loves to draw and paint, cook, and run.                                                                                                                                                                      ",
+    bio: "Ikjot Puar is from Piscataway, New Jersey, and is pursuing a major in Psychology with a minor in Biology on the pre-optometry track. She has been a member of RUPOPS, the Pre-Optometry Professions Society, for all of her years at Rutgers and served as President of the organization this past year. She is also a veteran volunteer for the New Jersey Special Olympics and the local clinical coordinator for Sikh Medical Initiative. Outside of school, Ikjot loves to draw and paint, cook, and run.",
     imageSrc: "/assets/team/ikjot.png",
     imageAlt: "Ikjot Puar team portrait card",
     imagePosition: "51% 31%"
@@ -89,7 +89,7 @@ export const teamMembers: TeamMember[] = [
     name: "Zabrina Garofalo",
     role: "Social Media Chair",
     meta: "Social Media Chair · Class of 2027 · Middletown, NJ · Biology, pre-medical track",
-    bio: "Zabrina Garofalo is from Middletown, New Jersey, and has lived there for the past 8 years. She is pursuing a major in Biological Sciences and is on the pre-medical track. Outside of the classroom, she volunteers at a non-profit health organization as a community health worker (CHW) and translates for patients who are unable to speak English. Although she adores science, she values creativity just as much. She loves art, baking, playing video games, drawing both digitally and traditionally, writing, and spending quality time with those closest to her. Fun fact: Zabrina has moved over 10 times!                                                                                                                                                                                                       ",    
+    bio: "Zabrina Garofalo is from Middletown, New Jersey, and has lived there for the past 8 years. She is pursuing a major in Biological Sciences and is on the pre-medical track. Outside of the classroom, she volunteers at a non-profit health organization as a community health worker (CHW) and translates for patients who are unable to speak English. Although she adores science, she values creativity just as much. She loves art, baking, playing video games, drawing both digitally and traditionally, writing, and spending quality time with those closest to her. Fun fact: Zabrina has moved over 10 times!",    
     imageSrc: "/assets/team/zabrina.png",
     imageAlt: "Zabrina Garofalo team portrait card",
     imagePosition: "49% 30%"
