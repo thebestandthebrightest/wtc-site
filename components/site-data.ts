@@ -99,6 +99,7 @@ export const teamMembers: TeamMember[] = [
     role: "Social Media Chair",
     meta: "Social Media Team Member · Class of 2030 · Middletown, NJ · Animal Science, pre-veterinary track",
     bio: "Zofia Garofalo moved from California to Middletown, New Jersey in 6th grade. Since then, they have decided to pursue their dream of becoming a veterinarian. Being a freshman, they haven’t had the opportunity to volunteer or research anything yet, but they were the treasurer for their previous school’s Environmental Club and participated in, through nomination, the Teen Arts Show. Along with a passion for the sciences, they have a love for all types of art. They have made clay creations before, but prefer drawing, both digitally and traditionally, and painting. They also enjoy playing video games, watching movies and anime, reading manga, watching and reading horror-related content, and spending time with their closest friends and family. Fun fact: Zofia has dyed their hair over 58 times!",
+    imageSrc: "/assets/team/zofia.png",
     imageAlt: "Zofia Garofalo team portrait card",
     imagePosition: "52% 31%"
   },
