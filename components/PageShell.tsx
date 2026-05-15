@@ -1,8 +1,7 @@
 import type { ReactNode } from "react";
 
 import { Footer } from "./Footer";
-import { Logo } from "./Logo";
-import { Navbar } from "./Navbar";
+import { SiteHeader } from "./SiteHeader";
 import type { NavKey } from "./site-data";
 
 export function PageShell({
@@ -15,8 +14,7 @@ export function PageShell({
   return (
     <div className="page-shell">
       <div className="page-shell__inner">
-        <Navbar active={active} />
-        <Logo />
+        <SiteHeader active={active} />
         {children}
         <Footer />
       </div>

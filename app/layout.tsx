@@ -27,15 +27,15 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: "/assets/logo/wtc-logo.png",
-        type: "image/png"
+        url: "/icon.svg",
+        type: "image/svg+xml"
       }
     ],
-    shortcut: ["/assets/logo/wtc-logo.png"],
+    shortcut: ["/icon.svg"],
     apple: [
       {
-        url: "/assets/logo/wtc-logo.png",
-        type: "image/png"
+        url: "/icon.svg",
+        type: "image/svg+xml"
       }
     ]
   },
