@@ -1484,7 +1484,7 @@ select {
 
   .home-doodle {
     z-index: 4 !important;
-    opacity: 0.62;
+    opacity: 0.62 !important;
     pointer-events: none;
     scale: 1;
   }
@@ -1499,7 +1499,7 @@ select {
 
   .home-doodle:nth-of-type(2) {
     top: 48% !important;
-    left: -8% !important;
+    left: -18% !important;
     right: auto !important;
     bottom: auto !important;
     width: 70px !important;
@@ -1507,7 +1507,7 @@ select {
 
   .home-doodle:nth-of-type(3) {
     top: 47% !important;
-    right: -9% !important;
+    right: -18% !important;
     left: auto !important;
     bottom: auto !important;
     width: 78px !important;
@@ -1630,7 +1630,7 @@ select {
   }
 
   .home-doodle {
-    opacity: 0.56;
+    opacity: 0.56 !important;
   }
 
   .home-doodle:nth-of-type(1) {
