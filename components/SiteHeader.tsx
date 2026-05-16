@@ -1,12 +1,15 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
 import { navLinks, type NavKey } from "./site-data";
 
 export function SiteHeader({ active }: { active?: NavKey }) {
   const [menuOpen, setMenuOpen] = useState(false);
+  const pathname = usePathname();
+  const showCenteredTitle = pathname !== "/";
 
   useEffect(() => {
     if (!menuOpen) {
@@ -54,6 +57,12 @@ export function SiteHeader({ active }: { active?: NavKey }) {
           ))}
         </nav>
 
+        {showCenteredTitle ? (
+          <Link href="/" className="site-logo" aria-label="Wellness Through Clay home">
+            <span className="site-logo__text">Wellness Through Clay</span>
+          </Link>
+        ) : null}
+
         <div className="site-header__mobile-bar">
           <button
             type="button"
@@ -67,6 +76,18 @@ export function SiteHeader({ active }: { active?: NavKey }) {
             <span />
             <span />
           </button>
+
+          {showCenteredTitle ? (
+            <Link
+              href="/"
+              className="site-header__mobile-logo"
+              aria-label="Wellness Through Clay home"
+            >
+              <span className="site-logo__text">Wellness Through Clay</span>
+            </Link>
+          ) : null}
+
+          <div className="site-header__mobile-spacer" aria-hidden="true" />
         </div>
       </header>
 
