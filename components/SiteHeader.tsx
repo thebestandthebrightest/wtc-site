@@ -7,6 +7,7 @@ import { navLinks, type NavKey } from "./site-data";
 
 export function SiteHeader({ active }: { active?: NavKey }) {
   const [menuOpen, setMenuOpen] = useState(false);
+  const brandLabel = active === "home" ? "WTC" : "Wellness Through Clay";
 
   useEffect(() => {
     if (!menuOpen) {
@@ -55,7 +56,7 @@ export function SiteHeader({ active }: { active?: NavKey }) {
         </nav>
 
         <Link className="site-logo" href="/" aria-label="Wellness Through Clay home">
-          <span className="site-logo__text">Wellness Through Clay</span>
+          <span className="site-logo__text">{brandLabel}</span>
         </Link>
 
         <div className="site-header__mobile-bar">
@@ -73,7 +74,7 @@ export function SiteHeader({ active }: { active?: NavKey }) {
           </button>
 
           <Link className="site-header__mobile-logo" href="/" aria-label="Wellness Through Clay home">
-            <span className="site-logo__text">Wellness Through Clay</span>
+            <span className="site-logo__text">{brandLabel}</span>
           </Link>
 
           <div className="site-header__mobile-spacer" aria-hidden="true" />
@@ -112,7 +113,7 @@ export function SiteHeader({ active }: { active?: NavKey }) {
               setMenuOpen(false);
             }}
           >
-            <span className="site-logo__text">Wellness Through Clay</span>
+            <span className="site-logo__text">{brandLabel}</span>
           </Link>
 
           <div className="site-header__mobile-spacer" aria-hidden="true" />

@@ -5,7 +5,7 @@ import { HomeDoodles } from "../components/HomeDoodles";
 
 export default function HomePage() {
   return (
-    <PageShell>
+    <PageShell active="home">
       <section className="home-hero">
         <HomeDoodles />
         <div className="home-hero__content">
