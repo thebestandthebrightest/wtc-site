@@ -7,7 +7,6 @@ import { navLinks, type NavKey } from "./site-data";
 
 export function SiteHeader({ active }: { active?: NavKey }) {
   const [menuOpen, setMenuOpen] = useState(false);
-  const brandLabel = active === "home" ? "WTC" : "Wellness Through Clay";
 
   useEffect(() => {
     if (!menuOpen) {
@@ -55,10 +54,6 @@ export function SiteHeader({ active }: { active?: NavKey }) {
           ))}
         </nav>
 
-        <Link className="site-logo" href="/" aria-label="Wellness Through Clay home">
-          <span className="site-logo__text">{brandLabel}</span>
-        </Link>
-
         <div className="site-header__mobile-bar">
           <button
             type="button"
@@ -72,12 +67,6 @@ export function SiteHeader({ active }: { active?: NavKey }) {
             <span />
             <span />
           </button>
-
-          <Link className="site-header__mobile-logo" href="/" aria-label="Wellness Through Clay home">
-            <span className="site-logo__text">{brandLabel}</span>
-          </Link>
-
-          <div className="site-header__mobile-spacer" aria-hidden="true" />
         </div>
       </header>
 
@@ -103,20 +92,6 @@ export function SiteHeader({ active }: { active?: NavKey }) {
             <span />
             <span />
           </button>
-
-          <Link
-            className="mobile-nav-overlay__logo"
-            href="/"
-            aria-label="Wellness Through Clay home"
-            onClick={(event) => {
-              event.stopPropagation();
-              setMenuOpen(false);
-            }}
-          >
-            <span className="site-logo__text">{brandLabel}</span>
-          </Link>
-
-          <div className="site-header__mobile-spacer" aria-hidden="true" />
         </div>
 
         <nav className="mobile-nav-overlay__nav" aria-label="Mobile">

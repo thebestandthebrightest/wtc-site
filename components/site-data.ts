@@ -120,49 +120,49 @@ export const homeDoodles: DoodleAsset[] = [
     alt: "Clay frog cowboy",
     width: 140,
     height: 140,
-    style: { top: "10%", left: "7%", opacity: "0.9", rotate: "-6deg", zIndex: "6", animationDelay: "0s" }
+    style: { top: "10%", left: "7%", opacity: "1", rotate: "-6deg", zIndex: "6", animationDelay: "0s" }
   },
   {
     src: "/assets/creations/clear-bg/axolotl.png",
     alt: "Clay axolotl",
     width: 150,
     height: 135,
-    style: { top: "42%", left: "6%", opacity: "0.92", rotate: "-8deg", zIndex: "7", animationDelay: "1.2s" }
+    style: { top: "42%", left: "6%", opacity: "1", rotate: "-8deg", zIndex: "7", animationDelay: "1.2s" }
   },
   {
     src: "/assets/creations/clear-bg/manta-ray.png",
     alt: "Clay manta ray",
     width: 160,
     height: 120,
-    style: { top: "39%", right: "3%", opacity: "0.9", rotate: "5deg", zIndex: "5", animationDelay: "0.5s" }
+    style: { top: "39%", right: "3%", opacity: "1", rotate: "5deg", zIndex: "5", animationDelay: "0.5s" }
   },
   {
     src: "/assets/creations/clear-bg/lemon-dish.png",
     alt: "Clay lemon dish",
     width: 120,
     height: 110,
-    style: { bottom: "14%", left: "22%", opacity: "0.85", rotate: "-3deg", zIndex: "4", animationDelay: "0.9s" }
+    style: { bottom: "14%", left: "22%", opacity: "1", rotate: "-3deg", zIndex: "4", animationDelay: "0.9s" }
   },
   {
     src: "/assets/creations/clear-bg/snake.png",
     alt: "Clay snake",
     width: 135,
     height: 115,
-    style: { bottom: "12%", right: "24%", opacity: "0.88", rotate: "4deg", zIndex: "5", animationDelay: "1.4s" }
+    style: { bottom: "12%", right: "24%", opacity: "1", rotate: "4deg", zIndex: "5", animationDelay: "1.4s" }
   },
   {
     src: "/assets/creations/clear-bg/sun-tile.png",
     alt: "Clay sun tile",
     width: 120,
     height: 120,
-    style: { top: "10%", right: "7%", opacity: "0.85", rotate: "6deg", zIndex: "4", animationDelay: "0.7s" }
+    style: { top: "10%", right: "7%", opacity: "1", rotate: "6deg", zIndex: "4", animationDelay: "0.7s" }
   },
   {
     src: "/assets/creations/clear-bg/torso-sculpture.png",
     alt: "Clay torso sculpture",
     width: 150,
     height: 170,
-    style: { bottom: "10%", right: "8%", opacity: "0.9", rotate: "-4deg", zIndex: "6", animationDelay: "1.6s" }
+    style: { bottom: "10%", right: "8%", opacity: "1", rotate: "-4deg", zIndex: "6", animationDelay: "1.6s" }
   }
 ];
 
