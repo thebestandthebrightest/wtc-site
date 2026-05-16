@@ -25,19 +25,9 @@ export const metadata: Metadata = {
     canonical: "https://wellnessthroughclay.com"
   },
   icons: {
-    icon: [
-      {
-        url: "/icon.svg",
-        type: "image/svg+xml"
-      }
-    ],
-    shortcut: ["/icon.svg"],
-    apple: [
-      {
-        url: "/icon.svg",
-        type: "image/svg+xml"
-      }
-    ]
+    icon: "/favicon.png",
+    shortcut: "/favicon.png",
+    apple: "/favicon.png"
   },
   openGraph: {
     title: "Wellness Through Clay",

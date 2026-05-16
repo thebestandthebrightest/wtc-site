@@ -62,7 +62,7 @@ export function SiteHeader({ active }: { active?: NavKey }) {
           <button
             type="button"
             className="site-header__menu-button"
-            aria-label="Open navigation menu"
+            aria-label="Open navigation"
             aria-expanded={menuOpen}
             aria-controls="mobile-navigation-menu"
             onClick={() => setMenuOpen(true)}
@@ -82,40 +82,57 @@ export function SiteHeader({ active }: { active?: NavKey }) {
 
       <div
         className={`mobile-nav-overlay${menuOpen ? " mobile-nav-overlay--open" : ""}`}
+        role="dialog"
+        aria-modal="true"
+        aria-label="Site navigation"
+        id="mobile-navigation-menu"
         aria-hidden={!menuOpen}
         onClick={() => setMenuOpen(false)}
       >
-        <div
-          className="mobile-nav-overlay__panel"
-          role="dialog"
-          aria-modal="true"
-          aria-label="Site navigation"
-          id="mobile-navigation-menu"
-          onClick={(event) => event.stopPropagation()}
-        >
+        <div className="mobile-nav-overlay__header">
           <button
             type="button"
             className="mobile-nav-overlay__close"
-            aria-label="Close navigation menu"
-            onClick={() => setMenuOpen(false)}
+            aria-label="Close navigation"
+            onClick={(event) => {
+              event.stopPropagation();
+              setMenuOpen(false);
+            }}
           >
             <span />
             <span />
           </button>
 
-          <nav className="mobile-nav-overlay__nav" aria-label="Mobile">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                aria-current={active === link.key ? "page" : undefined}
-                onClick={() => setMenuOpen(false)}
-              >
-                {link.label}
-              </Link>
-            ))}
-          </nav>
+          <Link
+            className="mobile-nav-overlay__logo"
+            href="/"
+            aria-label="Wellness Through Clay home"
+            onClick={(event) => {
+              event.stopPropagation();
+              setMenuOpen(false);
+            }}
+          >
+            <span className="site-logo__text">Wellness Through Clay</span>
+          </Link>
+
+          <div className="site-header__mobile-spacer" aria-hidden="true" />
         </div>
+
+        <nav className="mobile-nav-overlay__nav" aria-label="Mobile">
+          {navLinks.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              aria-current={active === link.key ? "page" : undefined}
+              onClick={(event) => {
+                event.stopPropagation();
+                setMenuOpen(false);
+              }}
+            >
+              {link.label}
+            </Link>
+          ))}
+        </nav>
       </div>
     </>
   );
